@@ -6,7 +6,7 @@ type Language = 'en' | 'zh'
 
 export class LocManager {
   private static instance: LocManager
-  private currentLang: Language = 'en'
+  private currentLang: Language = 'zh'
   private locales: Record<Language, LocaleData> = {
     en,
     zh

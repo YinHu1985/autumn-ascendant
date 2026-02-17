@@ -69,7 +69,7 @@ export default function App() {
   const [activeView, setActiveView] = useState<ActiveView>(null)
   const [debugMode, setDebugMode] = useState(false)
   const [mapMode, setMapMode] = useState<MapMode>('political')
-  const [showConnections, setShowConnections] = useState(true)
+  const [showConnections, setShowConnections] = useState(false)
   const [mapInteractionMode, setMapInteractionMode] = useState<'normal' | 'armyMove'>('normal')
   const [selectedArmyForMove, setSelectedArmyForMove] = useState<string | null>(null)
   const [validTargetSettlementIds, setValidTargetSettlementIds] = useState<string[]>([])

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "army_1",
+    "ownerId": "QII",
+    "location": "settlement-1",
+    "state": "IDLE",
+    "destination": null,
+    "arrivalDate": null
+  },
+  {
+    "id": "army_2",
+    "ownerId": "CHU",
+    "location": "settlement-2",
+    "state": "IDLE",
+    "destination": null,
+    "arrivalDate": null
+  }
+]

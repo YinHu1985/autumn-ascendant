@@ -1,0 +1,6335 @@
+[
+  {
+    "id": "settlement-1",
+    "name": "Settlement 1",
+    "ownerId": null,
+    "position": {
+      "x": 581,
+      "y": 633
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-2",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-9",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-7",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-8",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 3535,
+      "rural": 10245
+    },
+    "development": {
+      "urban": 2,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-2",
+    "name": "Settlement 2",
+    "ownerId": null,
+    "position": {
+      "x": 1777,
+      "y": 337
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-1",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-3",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-126",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-125",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-9",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-122",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-88",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4843,
+      "rural": 5197
+    },
+    "development": {
+      "urban": 4,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-3",
+    "name": "Settlement 3",
+    "ownerId": null,
+    "position": {
+      "x": 2705,
+      "y": 193
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-2",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-4",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-126",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-130",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4786,
+      "rural": 6210
+    },
+    "development": {
+      "urban": 1,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-4",
+    "name": "Settlement 4",
+    "ownerId": null,
+    "position": {
+      "x": 3170,
+      "y": 142
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-3",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-5",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-131",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-130",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-134",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 3861,
+      "rural": 10368
+    },
+    "development": {
+      "urban": 2,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-5",
+    "name": "Settlement 5",
+    "ownerId": null,
+    "position": {
+      "x": 3603,
+      "y": 296
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-4",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-6",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-134",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-136",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 2254,
+      "rural": 7878
+    },
+    "development": {
+      "urban": 3,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-6",
+    "name": "Settlement 6",
+    "ownerId": null,
+    "position": {
+      "x": 3972,
+      "y": 462
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-5",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-136",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-137",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 1595,
+      "rural": 10273
+    },
+    "development": {
+      "urban": 2,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-126",
+    "name": "Settlement 126",
+    "ownerId": null,
+    "position": {
+      "x": 2557,
+      "y": 444
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-2",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-3",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-130",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-125",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-127",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-129",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-128",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4451,
+      "rural": 7189
+    },
+    "development": {
+      "urban": 1,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-131",
+    "name": "Settlement 131",
+    "ownerId": null,
+    "position": {
+      "x": 3111,
+      "y": 396
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-4",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-130",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-134",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-132",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4658,
+      "rural": 8193
+    },
+    "development": {
+      "urban": 3,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-130",
+    "name": "Settlement 130",
+    "ownerId": null,
+    "position": {
+      "x": 2885,
+      "y": 446
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-3",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-4",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-126",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-131",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-129",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-132",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4867,
+      "rural": 12455
+    },
+    "development": {
+      "urban": 2,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-134",
+    "name": "Settlement 134",
+    "ownerId": null,
+    "position": {
+      "x": 3119,
+      "y": 693
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-4",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-5",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-131",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-136",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-129",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-132",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-128",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-123",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-135",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 2927,
+      "rural": 10482
+    },
+    "development": {
+      "urban": 1,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-125",
+    "name": "Settlement 125",
+    "ownerId": null,
+    "position": {
+      "x": 2296,
+      "y": 605
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-2",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-126",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-127",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-124",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-122",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2485,
+      "rural": 10373
+    },
+    "development": {
+      "urban": 3,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-136",
+    "name": "Settlement 136",
+    "ownerId": null,
+    "position": {
+      "x": 3482,
+      "y": 865
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-5",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-6",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-134",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-137",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-135",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-138",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-97",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 1778,
+      "rural": 9187
+    },
+    "development": {
+      "urban": 1,
+      "rural": 7
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-137",
+    "name": "Settlement 137",
+    "ownerId": null,
+    "position": {
+      "x": 3862,
+      "y": 841
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-6",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-136",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-138",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-142",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 1049,
+      "rural": 8383
+    },
+    "development": {
+      "urban": 4,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-127",
+    "name": "Settlement 127",
+    "ownerId": null,
+    "position": {
+      "x": 2518,
+      "y": 727
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-126",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-125",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-128",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-124",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-123",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4518,
+      "rural": 12103
+    },
+    "development": {
+      "urban": 5,
+      "rural": 10
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-129",
+    "name": "Settlement 129",
+    "ownerId": null,
+    "position": {
+      "x": 2811,
+      "y": 655
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-126",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-130",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-134",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-132",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-128",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4050,
+      "rural": 11037
+    },
+    "development": {
+      "urban": 1,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-132",
+    "name": "Settlement 132",
+    "ownerId": null,
+    "position": {
+      "x": 2941,
+      "y": 659
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-131",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-130",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-134",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-129",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3041,
+      "rural": 8049
+    },
+    "development": {
+      "urban": 3,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-9",
+    "name": "Settlement 9",
+    "ownerId": null,
+    "position": {
+      "x": 1352,
+      "y": 971
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-1",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-2",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-88",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-75",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-8",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-74",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5080,
+      "rural": 10410
+    },
+    "development": {
+      "urban": 4,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-128",
+    "name": "Settlement 128",
+    "ownerId": null,
+    "position": {
+      "x": 2686,
+      "y": 711
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-126",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-134",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-127",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-129",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-123",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5054,
+      "rural": 12275
+    },
+    "development": {
+      "urban": 3,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-124",
+    "name": "Settlement 124",
+    "ownerId": null,
+    "position": {
+      "x": 2274,
+      "y": 816
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-125",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-127",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-122",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-123",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-121",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1735,
+      "rural": 7649
+    },
+    "development": {
+      "urban": 5,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-122",
+    "name": "Settlement 122",
+    "ownerId": null,
+    "position": {
+      "x": 1997,
+      "y": 836
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-2",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-125",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-124",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-88",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-121",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2340,
+      "rural": 9650
+    },
+    "development": {
+      "urban": 1,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-123",
+    "name": "Settlement 123",
+    "ownerId": null,
+    "position": {
+      "x": 2507,
+      "y": 963
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-134",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-127",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-128",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-124",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-135",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-121",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-108",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-109",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-119",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2519,
+      "rural": 6671
+    },
+    "development": {
+      "urban": 1,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-88",
+    "name": "Settlement 88",
+    "ownerId": null,
+    "position": {
+      "x": 1816,
+      "y": 1093
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-2",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-9",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-122",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-121",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-75",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-120",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-87",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4669,
+      "rural": 10786
+    },
+    "development": {
+      "urban": 1,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-135",
+    "name": "Settlement 135",
+    "ownerId": null,
+    "position": {
+      "x": 2966,
+      "y": 1061
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-134",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-136",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-123",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-108",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-97",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-98",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 1901,
+      "rural": 13322
+    },
+    "development": {
+      "urban": 3,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-121",
+    "name": "Settlement 121",
+    "ownerId": null,
+    "position": {
+      "x": 2207,
+      "y": 1037
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-124",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-122",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-123",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-88",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-120",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-119",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3885,
+      "rural": 12845
+    },
+    "development": {
+      "urban": 2,
+      "rural": 10
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-75",
+    "name": "Settlement 75",
+    "ownerId": null,
+    "position": {
+      "x": 1642,
+      "y": 1189
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-9",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-88",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-87",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-74",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5686,
+      "rural": 8515
+    },
+    "development": {
+      "urban": 3,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-108",
+    "name": "Settlement 108",
+    "ownerId": null,
+    "position": {
+      "x": 2712,
+      "y": 1205
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-123",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-135",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-109",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-98",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-99",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-110",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-100",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4641,
+      "rural": 10098
+    },
+    "development": {
+      "urban": 5,
+      "rural": 7
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-138",
+    "name": "Settlement 138",
+    "ownerId": null,
+    "position": {
+      "x": 3541,
+      "y": 1387
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-136",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-137",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-97",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-142",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-95",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-91",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-139",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 5856,
+      "rural": 9389
+    },
+    "development": {
+      "urban": 5,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-7",
+    "name": "Settlement 7",
+    "ownerId": null,
+    "position": {
+      "x": 299,
+      "y": 1483
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-1",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-8",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-10",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-11",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 2677,
+      "rural": 6480
+    },
+    "development": {
+      "urban": 3,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-109",
+    "name": "Settlement 109",
+    "ownerId": null,
+    "position": {
+      "x": 2511,
+      "y": 1287
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-123",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-108",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-119",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-118",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-110",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-112",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3912,
+      "rural": 9790
+    },
+    "development": {
+      "urban": 5,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-97",
+    "name": "Settlement 97",
+    "ownerId": "CHU",
+    "position": {
+      "x": 3286,
+      "y": 1244
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-136",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-135",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-138",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-98",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-96",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-95",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1329,
+      "rural": 8806
+    },
+    "development": {
+      "urban": 2,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-120",
+    "name": "Settlement 120",
+    "ownerId": null,
+    "position": {
+      "x": 2075,
+      "y": 1230
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-88",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-121",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-119",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-87",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-118",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-115",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-117",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5906,
+      "rural": 9271
+    },
+    "development": {
+      "urban": 1,
+      "rural": 10
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-119",
+    "name": "Settlement 119",
+    "ownerId": null,
+    "position": {
+      "x": 2379,
+      "y": 1223
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-123",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-121",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-109",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-120",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-118",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4121,
+      "rural": 5611
+    },
+    "development": {
+      "urban": 4,
+      "rural": 10
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-142",
+    "name": "Settlement 142",
+    "ownerId": null,
+    "position": {
+      "x": 3940,
+      "y": 2215
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-137",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-138",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-139",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-140",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-141",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-22",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 2801,
+      "rural": 5553
+    },
+    "development": {
+      "urban": 3,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-8",
+    "name": "Settlement 8",
+    "ownerId": null,
+    "position": {
+      "x": 986,
+      "y": 1574
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-1",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-9",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-7",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-74",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-73",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-10",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-37",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-38",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1123,
+      "rural": 7307
+    },
+    "development": {
+      "urban": 4,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-98",
+    "name": "Settlement 98",
+    "ownerId": "CHU",
+    "position": {
+      "x": 2955,
+      "y": 1331
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-135",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-108",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-97",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-99",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-96",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2973,
+      "rural": 11548
+    },
+    "development": {
+      "urban": 3,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-87",
+    "name": "Settlement 87",
+    "ownerId": null,
+    "position": {
+      "x": 1796,
+      "y": 1502
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-88",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-75",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-120",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-74",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-115",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-86",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 1859,
+      "rural": 12060
+    },
+    "development": {
+      "urban": 5,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-74",
+    "name": "Settlement 74",
+    "ownerId": null,
+    "position": {
+      "x": 1520,
+      "y": 1544
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-9",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-75",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-8",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-87",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-73",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-86",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-72",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-85",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4053,
+      "rural": 7657
+    },
+    "development": {
+      "urban": 5,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-118",
+    "name": "Settlement 118",
+    "ownerId": null,
+    "position": {
+      "x": 2284,
+      "y": 1410
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-109",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-120",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-119",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-117",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-112",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-116",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1661,
+      "rural": 13004
+    },
+    "development": {
+      "urban": 1,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-99",
+    "name": "Settlement 99",
+    "ownerId": null,
+    "position": {
+      "x": 2815,
+      "y": 1451
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-108",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-98",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-96",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-100",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-93",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1847,
+      "rural": 8746
+    },
+    "development": {
+      "urban": 5,
+      "rural": 10
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-115",
+    "name": "Settlement 115",
+    "ownerId": null,
+    "position": {
+      "x": 1952,
+      "y": 1670
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-120",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-87",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-117",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-116",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-86",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-106",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-84",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5234,
+      "rural": 12695
+    },
+    "development": {
+      "urban": 1,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-117",
+    "name": "Settlement 117",
+    "ownerId": null,
+    "position": {
+      "x": 2103,
+      "y": 1555
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-120",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-118",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-115",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-116",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3203,
+      "rural": 11442
+    },
+    "development": {
+      "urban": 5,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-96",
+    "name": "Settlement 96",
+    "ownerId": "CHU",
+    "position": {
+      "x": 3039,
+      "y": 1480
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-97",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-98",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-99",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-95",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-93",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-94",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2497,
+      "rural": 10774
+    },
+    "development": {
+      "urban": 1,
+      "rural": 7
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-110",
+    "name": "Settlement 110",
+    "ownerId": null,
+    "position": {
+      "x": 2567,
+      "y": 1490
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-108",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-109",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-100",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-112",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-111",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2657,
+      "rural": 10844
+    },
+    "development": {
+      "urban": 3,
+      "rural": 10
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-100",
+    "name": "Settlement 100",
+    "ownerId": null,
+    "position": {
+      "x": 2689,
+      "y": 1611
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-108",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-99",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-110",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-93",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-111",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-101",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3940,
+      "rural": 5576
+    },
+    "development": {
+      "urban": 2,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-95",
+    "name": "Settlement 95",
+    "ownerId": "CHU",
+    "position": {
+      "x": 3173,
+      "y": 1512
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-138",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-97",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-96",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-94",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-91",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2431,
+      "rural": 11483
+    },
+    "development": {
+      "urban": 2,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-112",
+    "name": "Settlement 112",
+    "ownerId": null,
+    "position": {
+      "x": 2422,
+      "y": 1559
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-109",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-118",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-110",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-116",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-111",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-113",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3294,
+      "rural": 13985
+    },
+    "development": {
+      "urban": 3,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-93",
+    "name": "Settlement 93",
+    "ownerId": null,
+    "position": {
+      "x": 2872,
+      "y": 1648
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-99",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-96",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-100",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-94",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-91",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-92",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-101",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 2227,
+      "rural": 14272
+    },
+    "development": {
+      "urban": 3,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-73",
+    "name": "Settlement 73",
+    "ownerId": null,
+    "position": {
+      "x": 1324,
+      "y": 1724
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-8",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-74",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-72",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-38",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 4059,
+      "rural": 6743
+    },
+    "development": {
+      "urban": 3,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-116",
+    "name": "Settlement 116",
+    "ownerId": null,
+    "position": {
+      "x": 2221,
+      "y": 1725
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-118",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-115",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-117",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-112",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-113",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-114",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-106",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 4372,
+      "rural": 12137
+    },
+    "development": {
+      "urban": 4,
+      "rural": 10
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-94",
+    "name": "Settlement 94",
+    "ownerId": "CHU",
+    "position": {
+      "x": 3043,
+      "y": 1599
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-96",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-95",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-93",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-91",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1738,
+      "rural": 9802
+    },
+    "development": {
+      "urban": 2,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-111",
+    "name": "Settlement 111",
+    "ownerId": null,
+    "position": {
+      "x": 2514,
+      "y": 1683
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-110",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-100",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-112",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-113",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-101",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-114",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-107",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 2391,
+      "rural": 13546
+    },
+    "development": {
+      "urban": 5,
+      "rural": 7
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-91",
+    "name": "Settlement 91",
+    "ownerId": null,
+    "position": {
+      "x": 3073,
+      "y": 1696
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-138",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-95",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-93",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-94",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-139",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-92",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-89",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5957,
+      "rural": 7247
+    },
+    "development": {
+      "urban": 1,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-113",
+    "name": "Settlement 113",
+    "ownerId": null,
+    "position": {
+      "x": 2391,
+      "y": 1723
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-112",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-116",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-111",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-114",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4533,
+      "rural": 13606
+    },
+    "development": {
+      "urban": 3,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-86",
+    "name": "Settlement 86",
+    "ownerId": null,
+    "position": {
+      "x": 1843,
+      "y": 1828
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-87",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-74",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-115",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-85",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-84",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2163,
+      "rural": 13879
+    },
+    "development": {
+      "urban": 5,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-139",
+    "name": "Settlement 139",
+    "ownerId": null,
+    "position": {
+      "x": 3426,
+      "y": 1900
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-138",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-142",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-91",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-89",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-76",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-59",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-140",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 5622,
+      "rural": 14482
+    },
+    "development": {
+      "urban": 4,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-92",
+    "name": "Settlement 92",
+    "ownerId": null,
+    "position": {
+      "x": 2862,
+      "y": 1783
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-93",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-91",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-101",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-89",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-90",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-78",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 1578,
+      "rural": 8760
+    },
+    "development": {
+      "urban": 2,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-10",
+    "name": "Settlement 10",
+    "ownerId": "JIN",
+    "position": {
+      "x": 390,
+      "y": 1920
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-7",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-8",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-37",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-11",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-36",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-34",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1657,
+      "rural": 13507
+    },
+    "development": {
+      "urban": 4,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-101",
+    "name": "Settlement 101",
+    "ownerId": null,
+    "position": {
+      "x": 2612,
+      "y": 1826
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-100",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-93",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-111",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-92",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-107",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-78",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-102",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3126,
+      "rural": 13289
+    },
+    "development": {
+      "urban": 3,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-114",
+    "name": "Settlement 114",
+    "ownerId": null,
+    "position": {
+      "x": 2348,
+      "y": 1815
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-116",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-111",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-113",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-107",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-106",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1009,
+      "rural": 7511
+    },
+    "development": {
+      "urban": 3,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-89",
+    "name": "Settlement 89",
+    "ownerId": null,
+    "position": {
+      "x": 3042,
+      "y": 1819
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-91",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-139",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-92",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-90",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-76",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5014,
+      "rural": 5034
+    },
+    "development": {
+      "urban": 3,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-72",
+    "name": "Settlement 72",
+    "ownerId": null,
+    "position": {
+      "x": 1513,
+      "y": 1941
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-74",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-73",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-85",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-38",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-71",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-70",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 5572,
+      "rural": 12842
+    },
+    "development": {
+      "urban": 2,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-90",
+    "name": "Settlement 90",
+    "ownerId": null,
+    "position": {
+      "x": 2892,
+      "y": 1887
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-92",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-89",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-76",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-78",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 4588,
+      "rural": 14640
+    },
+    "development": {
+      "urban": 5,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-37",
+    "name": "Settlement 37",
+    "ownerId": "JIN",
+    "position": {
+      "x": 898,
+      "y": 1919
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-8",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-10",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-38",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-36",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 3182,
+      "rural": 9687
+    },
+    "development": {
+      "urban": 3,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-107",
+    "name": "Settlement 107",
+    "ownerId": null,
+    "position": {
+      "x": 2430,
+      "y": 1907
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-111",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-101",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-114",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-106",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-102",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-105",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-103",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2234,
+      "rural": 6625
+    },
+    "development": {
+      "urban": 3,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-76",
+    "name": "Settlement 76",
+    "ownerId": null,
+    "position": {
+      "x": 3089,
+      "y": 1928
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-139",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-89",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-90",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-78",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-59",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-77",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-60",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2136,
+      "rural": 5927
+    },
+    "development": {
+      "urban": 2,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-78",
+    "name": "Settlement 78",
+    "ownerId": null,
+    "position": {
+      "x": 2833,
+      "y": 2042
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-92",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-101",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-90",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-76",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-102",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-77",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-80",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-61",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-79",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5223,
+      "rural": 9469
+    },
+    "development": {
+      "urban": 5,
+      "rural": 10
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-85",
+    "name": "Settlement 85",
+    "ownerId": null,
+    "position": {
+      "x": 1757,
+      "y": 1925
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-74",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-86",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-72",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-84",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-70",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3855,
+      "rural": 14093
+    },
+    "development": {
+      "urban": 4,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-38",
+    "name": "Settlement 38",
+    "ownerId": "JIN",
+    "position": {
+      "x": 1149,
+      "y": 1981
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-8",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-73",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-72",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-37",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-71",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-36",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-39",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1341,
+      "rural": 14932
+    },
+    "development": {
+      "urban": 4,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-106",
+    "name": "Settlement 106",
+    "ownerId": null,
+    "position": {
+      "x": 2238,
+      "y": 1952
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-115",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-116",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-114",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-107",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-84",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-105",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5080,
+      "rural": 9422
+    },
+    "development": {
+      "urban": 4,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-11",
+    "name": "Settlement 11",
+    "ownerId": null,
+    "position": {
+      "x": 302,
+      "y": 3007
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-7",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-10",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-34",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-33",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-32",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-18",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-12",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 1722,
+      "rural": 9295
+    },
+    "development": {
+      "urban": 3,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-84",
+    "name": "Settlement 84",
+    "ownerId": null,
+    "position": {
+      "x": 1980,
+      "y": 2030
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-115",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-86",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-85",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-106",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-105",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-70",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-83",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-69",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3452,
+      "rural": 5269
+    },
+    "development": {
+      "urban": 1,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-102",
+    "name": "Settlement 102",
+    "ownerId": null,
+    "position": {
+      "x": 2605,
+      "y": 1975
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-101",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-107",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-78",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-103",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-80",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2012,
+      "rural": 7696
+    },
+    "development": {
+      "urban": 5,
+      "rural": 7
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-105",
+    "name": "Settlement 105",
+    "ownerId": null,
+    "position": {
+      "x": 2321,
+      "y": 2067
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-107",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-106",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-84",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-103",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-83",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-104",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 5770,
+      "rural": 7639
+    },
+    "development": {
+      "urban": 2,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-59",
+    "name": "Settlement 59",
+    "ownerId": null,
+    "position": {
+      "x": 3309,
+      "y": 2128
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-139",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-76",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-140",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-60",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3383,
+      "rural": 8823
+    },
+    "development": {
+      "urban": 2,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-71",
+    "name": "Settlement 71",
+    "ownerId": null,
+    "position": {
+      "x": 1341,
+      "y": 2052
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-72",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-38",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-70",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-39",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4917,
+      "rural": 5991
+    },
+    "development": {
+      "urban": 2,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-36",
+    "name": "Settlement 36",
+    "ownerId": "JIN",
+    "position": {
+      "x": 822,
+      "y": 2186
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-10",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-37",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-38",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-39",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-34",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-35",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4880,
+      "rural": 11336
+    },
+    "development": {
+      "urban": 2,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-70",
+    "name": "Settlement 70",
+    "ownerId": null,
+    "position": {
+      "x": 1627,
+      "y": 2089
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-72",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-85",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-84",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-71",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-39",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-69",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1509,
+      "rural": 6706
+    },
+    "development": {
+      "urban": 2,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-103",
+    "name": "Settlement 103",
+    "ownerId": null,
+    "position": {
+      "x": 2484,
+      "y": 2079
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-107",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-102",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-105",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-80",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-104",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 1576,
+      "rural": 13847
+    },
+    "development": {
+      "urban": 4,
+      "rural": 7
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-77",
+    "name": "Settlement 77",
+    "ownerId": null,
+    "position": {
+      "x": 3064,
+      "y": 2077
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-76",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-78",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-60",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-61",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 2686,
+      "rural": 5218
+    },
+    "development": {
+      "urban": 4,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-140",
+    "name": "Settlement 140",
+    "ownerId": null,
+    "position": {
+      "x": 3771,
+      "y": 2452
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-142",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-139",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-59",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-60",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-23",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-56",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-55",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-41",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-42",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-21",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-20",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-141",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 5238,
+      "rural": 5390
+    },
+    "development": {
+      "urban": 4,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-60",
+    "name": "Settlement 60",
+    "ownerId": null,
+    "position": {
+      "x": 3174,
+      "y": 2195
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-76",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-59",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-77",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-140",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-61",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-56",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 1252,
+      "rural": 12155
+    },
+    "development": {
+      "urban": 3,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-80",
+    "name": "Settlement 80",
+    "ownerId": null,
+    "position": {
+      "x": 2636,
+      "y": 2157
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-78",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-102",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-103",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-104",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-79",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-81",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 4269,
+      "rural": 6407
+    },
+    "development": {
+      "urban": 1,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-83",
+    "name": "Settlement 83",
+    "ownerId": null,
+    "position": {
+      "x": 2169,
+      "y": 2194
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-84",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-105",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-104",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-69",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-68",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-82",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-66",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4368,
+      "rural": 13663
+    },
+    "development": {
+      "urban": 4,
+      "rural": 7
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-39",
+    "name": "Settlement 39",
+    "ownerId": null,
+    "position": {
+      "x": 1343,
+      "y": 2273
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-38",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-71",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-36",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-70",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-69",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-30",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-35",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-52",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 3233,
+      "rural": 7343
+    },
+    "development": {
+      "urban": 5,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-104",
+    "name": "Settlement 104",
+    "ownerId": null,
+    "position": {
+      "x": 2425,
+      "y": 2210
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-105",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-103",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-80",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-83",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-81",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-82",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5312,
+      "rural": 14068
+    },
+    "development": {
+      "urban": 3,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-69",
+    "name": "Settlement 69",
+    "ownerId": null,
+    "position": {
+      "x": 1805,
+      "y": 2269
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-84",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-70",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-83",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-39",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-68",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-67",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-52",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-53",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 1087,
+      "rural": 7237
+    },
+    "development": {
+      "urban": 2,
+      "rural": 10
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-34",
+    "name": "Settlement 34",
+    "ownerId": null,
+    "position": {
+      "x": 604,
+      "y": 2318
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-10",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-11",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-36",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-35",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-33",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2020,
+      "rural": 6549
+    },
+    "development": {
+      "urban": 1,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-61",
+    "name": "Settlement 61",
+    "ownerId": null,
+    "position": {
+      "x": 3017,
+      "y": 2328
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-78",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-77",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-60",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-79",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-62",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-56",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-58",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4504,
+      "rural": 7347
+    },
+    "development": {
+      "urban": 4,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-79",
+    "name": "Settlement 79",
+    "ownerId": null,
+    "position": {
+      "x": 2775,
+      "y": 2242
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-78",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-80",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-61",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-81",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-62",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 4615,
+      "rural": 12933
+    },
+    "development": {
+      "urban": 5,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-81",
+    "name": "Settlement 81",
+    "ownerId": null,
+    "position": {
+      "x": 2585,
+      "y": 2300
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-80",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-104",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-79",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-82",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-62",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-63",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 2430,
+      "rural": 13966
+    },
+    "development": {
+      "urban": 3,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-68",
+    "name": "Settlement 68",
+    "ownerId": null,
+    "position": {
+      "x": 2054,
+      "y": 2301
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-83",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-69",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-66",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-67",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4991,
+      "rural": 12527
+    },
+    "development": {
+      "urban": 4,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-23",
+    "name": "Settlement 23",
+    "ownerId": null,
+    "position": {
+      "x": 3509,
+      "y": 2241
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-140",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 2264,
+      "rural": 13742
+    },
+    "development": {
+      "urban": 4,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-82",
+    "name": "Settlement 82",
+    "ownerId": null,
+    "position": {
+      "x": 2378,
+      "y": 2362
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-83",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-104",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-81",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-66",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-63",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-65",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-64",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 3702,
+      "rural": 8009
+    },
+    "development": {
+      "urban": 1,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-62",
+    "name": "Settlement 62",
+    "ownerId": null,
+    "position": {
+      "x": 2837,
+      "y": 2435
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-61",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-79",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-81",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-63",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-58",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-44",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4198,
+      "rural": 6094
+    },
+    "development": {
+      "urban": 1,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-66",
+    "name": "Settlement 66",
+    "ownerId": null,
+    "position": {
+      "x": 2152,
+      "y": 2448
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-83",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-68",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-82",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-67",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-65",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-54",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-47",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4891,
+      "rural": 13024
+    },
+    "development": {
+      "urban": 2,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-56",
+    "name": "Settlement 56",
+    "ownerId": null,
+    "position": {
+      "x": 3257,
+      "y": 2427
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-140",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-60",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-61",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-55",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-143",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-58",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-42",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-57",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4598,
+      "rural": 10264
+    },
+    "development": {
+      "urban": 2,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-55",
+    "name": "Settlement 55",
+    "ownerId": null,
+    "position": {
+      "x": 3506,
+      "y": 2414
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-140",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-56",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-143",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-41",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4873,
+      "rural": 8477
+    },
+    "development": {
+      "urban": 1,
+      "rural": 10
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-63",
+    "name": "Settlement 63",
+    "ownerId": null,
+    "position": {
+      "x": 2645,
+      "y": 2450
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-81",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-82",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-62",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-64",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-44",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2193,
+      "rural": 11305
+    },
+    "development": {
+      "urban": 1,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-67",
+    "name": "Settlement 67",
+    "ownerId": null,
+    "position": {
+      "x": 2013,
+      "y": 2436
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-69",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-68",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-66",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-53",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-54",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 5098,
+      "rural": 13523
+    },
+    "development": {
+      "urban": 1,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-30",
+    "name": "Settlement 30",
+    "ownerId": null,
+    "position": {
+      "x": 1273,
+      "y": 2750
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-39",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-35",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-52",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-51",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-29",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-31",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-18",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 2276,
+      "rural": 6057
+    },
+    "development": {
+      "urban": 4,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-35",
+    "name": "Settlement 35",
+    "ownerId": "JIN",
+    "position": {
+      "x": 991,
+      "y": 2596
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-36",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-39",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-34",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-30",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-33",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-31",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2706,
+      "rural": 12742
+    },
+    "development": {
+      "urban": 5,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-52",
+    "name": "Settlement 52",
+    "ownerId": null,
+    "position": {
+      "x": 1622,
+      "y": 2486
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-39",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-69",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-30",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-53",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-51",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5015,
+      "rural": 7654
+    },
+    "development": {
+      "urban": 4,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-53",
+    "name": "Settlement 53",
+    "ownerId": null,
+    "position": {
+      "x": 1843,
+      "y": 2523
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-69",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-67",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-52",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-54",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-51",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-50",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2483,
+      "rural": 7447
+    },
+    "development": {
+      "urban": 4,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-65",
+    "name": "Settlement 65",
+    "ownerId": null,
+    "position": {
+      "x": 2313,
+      "y": 2516
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-82",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-66",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-64",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-47",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-45",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3317,
+      "rural": 5002
+    },
+    "development": {
+      "urban": 3,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-64",
+    "name": "Settlement 64",
+    "ownerId": null,
+    "position": {
+      "x": 2497,
+      "y": 2515
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-82",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-63",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-65",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-44",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-45",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 2384,
+      "rural": 9800
+    },
+    "development": {
+      "urban": 2,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-143",
+    "name": "Settlement 143",
+    "ownerId": null,
+    "position": {
+      "x": 3422,
+      "y": 2495
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-56",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-55",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-41",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-42",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 3290,
+      "rural": 5177
+    },
+    "development": {
+      "urban": 4,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-41",
+    "name": "Settlement 41",
+    "ownerId": null,
+    "position": {
+      "x": 3546,
+      "y": 2573
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-140",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-55",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-143",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-42",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3923,
+      "rural": 12212
+    },
+    "development": {
+      "urban": 2,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-58",
+    "name": "Settlement 58",
+    "ownerId": "QII",
+    "position": {
+      "x": 2950,
+      "y": 2598
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-61",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-62",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-56",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-44",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-57",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-43",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4628,
+      "rural": 9830
+    },
+    "development": {
+      "urban": 5,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-54",
+    "name": "Settlement 54",
+    "ownerId": null,
+    "position": {
+      "x": 2008,
+      "y": 2598
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-66",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-67",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-53",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-47",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-50",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-49",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5977,
+      "rural": 9158
+    },
+    "development": {
+      "urban": 2,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-42",
+    "name": "Settlement 42",
+    "ownerId": null,
+    "position": {
+      "x": 3346,
+      "y": 2622
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-140",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-56",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-143",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-41",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-57",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-43",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-20",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 2553,
+      "rural": 5840
+    },
+    "development": {
+      "urban": 3,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-33",
+    "name": "Settlement 33",
+    "ownerId": null,
+    "position": {
+      "x": 724,
+      "y": 2704
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-11",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-34",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-35",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-31",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-32",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5823,
+      "rural": 11156
+    },
+    "development": {
+      "urban": 3,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-44",
+    "name": "Settlement 44",
+    "ownerId": "QII",
+    "position": {
+      "x": 2699,
+      "y": 2734
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-62",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-63",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-64",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-58",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-45",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-43",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-27",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-144",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 5802,
+      "rural": 10795
+    },
+    "development": {
+      "urban": 2,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-51",
+    "name": "Settlement 51",
+    "ownerId": null,
+    "position": {
+      "x": 1681,
+      "y": 2699
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-30",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-52",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-53",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-50",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-29",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 4794,
+      "rural": 9775
+    },
+    "development": {
+      "urban": 1,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-57",
+    "name": "Settlement 57",
+    "ownerId": null,
+    "position": {
+      "x": 3141,
+      "y": 2641
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-56",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-58",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-42",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-43",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1753,
+      "rural": 8705
+    },
+    "development": {
+      "urban": 5,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-47",
+    "name": "Settlement 47",
+    "ownerId": null,
+    "position": {
+      "x": 2231,
+      "y": 2720
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-66",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-65",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-54",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-45",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-49",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-48",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-46",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 1670,
+      "rural": 6469
+    },
+    "development": {
+      "urban": 1,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-45",
+    "name": "Settlement 45",
+    "ownerId": null,
+    "position": {
+      "x": 2422,
+      "y": 2685
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-65",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-64",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-44",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-47",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-27",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-46",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 4366,
+      "rural": 6001
+    },
+    "development": {
+      "urban": 3,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-21",
+    "name": "Settlement 21",
+    "ownerId": null,
+    "position": {
+      "x": 3809,
+      "y": 2684
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-140",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 2117,
+      "rural": 12950
+    },
+    "development": {
+      "urban": 5,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-50",
+    "name": "Settlement 50",
+    "ownerId": null,
+    "position": {
+      "x": 1918,
+      "y": 2723
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-53",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-54",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-51",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-49",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-29",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 1885,
+      "rural": 10235
+    },
+    "development": {
+      "urban": 5,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-43",
+    "name": "Settlement 43",
+    "ownerId": "QII",
+    "position": {
+      "x": 3148,
+      "y": 2797
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-58",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-42",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-44",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-57",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-20",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-144",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-24",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-40",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1755,
+      "rural": 9804
+    },
+    "development": {
+      "urban": 3,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-49",
+    "name": "Settlement 49",
+    "ownerId": null,
+    "position": {
+      "x": 2034,
+      "y": 2796
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-54",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-47",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-50",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-48",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-29",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 5907,
+      "rural": 10376
+    },
+    "development": {
+      "urban": 4,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-20",
+    "name": "Settlement 20",
+    "ownerId": "QII",
+    "position": {
+      "x": 3598,
+      "y": 2913
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-140",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-42",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-43",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-24",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-141",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-19",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4077,
+      "rural": 9040
+    },
+    "development": {
+      "urban": 1,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-48",
+    "name": "Settlement 48",
+    "ownerId": null,
+    "position": {
+      "x": 2115,
+      "y": 2853
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-47",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-49",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-29",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-46",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5388,
+      "rural": 9329
+    },
+    "development": {
+      "urban": 2,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-27",
+    "name": "Settlement 27",
+    "ownerId": null,
+    "position": {
+      "x": 2454,
+      "y": 3435
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-44",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-45",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-46",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-144",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-145",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-25",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-28",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-26",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-13",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-16",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-15",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5595,
+      "rural": 14928
+    },
+    "development": {
+      "urban": 3,
+      "rural": 4
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-29",
+    "name": "Settlement 29",
+    "ownerId": null,
+    "position": {
+      "x": 1748,
+      "y": 3057
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-30",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-51",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-50",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-49",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-48",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-46",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-145",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-18",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-28",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-13",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5495,
+      "rural": 14367
+    },
+    "development": {
+      "urban": 4,
+      "rural": 1
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-46",
+    "name": "Settlement 46",
+    "ownerId": null,
+    "position": {
+      "x": 2272,
+      "y": 2930
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-47",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-45",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-48",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-27",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-29",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-145",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 3700,
+      "rural": 7890
+    },
+    "development": {
+      "urban": 5,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-31",
+    "name": "Settlement 31",
+    "ownerId": null,
+    "position": {
+      "x": 964,
+      "y": 3075
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-30",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-35",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-33",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-32",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-18",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 4739,
+      "rural": 14477
+    },
+    "development": {
+      "urban": 4,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-144",
+    "name": "Settlement 144",
+    "ownerId": null,
+    "position": {
+      "x": 2820,
+      "y": 2927
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-44",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-43",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-27",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-40",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-25",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 4504,
+      "rural": 9102
+    },
+    "development": {
+      "urban": 5,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-24",
+    "name": "Settlement 24",
+    "ownerId": "QII",
+    "position": {
+      "x": 3299,
+      "y": 3057
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-43",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-20",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-40",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-25",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-19",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1764,
+      "rural": 9646
+    },
+    "development": {
+      "urban": 4,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-32",
+    "name": "Settlement 32",
+    "ownerId": null,
+    "position": {
+      "x": 767,
+      "y": 3132
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-11",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-33",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-31",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-18",
+        "type": "river"
+      }
+    ],
+    "population": {
+      "urban": 5474,
+      "rural": 11657
+    },
+    "development": {
+      "urban": 5,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-40",
+    "name": "Settlement 40",
+    "ownerId": null,
+    "position": {
+      "x": 3012,
+      "y": 3039
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-43",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-144",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-24",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-25",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3954,
+      "rural": 10482
+    },
+    "development": {
+      "urban": 3,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-141",
+    "name": "Settlement 141",
+    "ownerId": null,
+    "position": {
+      "x": 3787,
+      "y": 3392
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-142",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-140",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-20",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-19",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-17",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-22",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-133",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 2639,
+      "rural": 9238
+    },
+    "development": {
+      "urban": 3,
+      "rural": 7
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-145",
+    "name": "Settlement 145",
+    "ownerId": null,
+    "position": {
+      "x": 2246,
+      "y": 3131
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-27",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-29",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-46",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-28",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 3727,
+      "rural": 10386
+    },
+    "development": {
+      "urban": 1,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-25",
+    "name": "Settlement 25",
+    "ownerId": null,
+    "position": {
+      "x": 3062,
+      "y": 3385
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-27",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-144",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-24",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-40",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-19",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-26",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-17",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3002,
+      "rural": 12477
+    },
+    "development": {
+      "urban": 2,
+      "rural": 5
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-18",
+    "name": "Settlement 18",
+    "ownerId": null,
+    "position": {
+      "x": 1048,
+      "y": 3484
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-11",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-30",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-29",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-31",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-32",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-13",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-12",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1775,
+      "rural": 13116
+    },
+    "development": {
+      "urban": 2,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-19",
+    "name": "Settlement 19",
+    "ownerId": null,
+    "position": {
+      "x": 3453,
+      "y": 3367
+    },
+    "terrain": "marsh",
+    "connections": [
+      {
+        "targetId": "settlement-20",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-24",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-141",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-25",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-17",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4345,
+      "rural": 10385
+    },
+    "development": {
+      "urban": 1,
+      "rural": 2
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-28",
+    "name": "Settlement 28",
+    "ownerId": null,
+    "position": {
+      "x": 2057,
+      "y": 3484
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-27",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-29",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-145",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-13",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3572,
+      "rural": 12751
+    },
+    "development": {
+      "urban": 1,
+      "rural": 3
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-26",
+    "name": "Settlement 26",
+    "ownerId": null,
+    "position": {
+      "x": 2819,
+      "y": 3549
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-27",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-25",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-17",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-16",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 5237,
+      "rural": 8611
+    },
+    "development": {
+      "urban": 3,
+      "rural": 6
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-13",
+    "name": "Settlement 13",
+    "ownerId": null,
+    "position": {
+      "x": 1506,
+      "y": 3731
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-27",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-29",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-18",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-28",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-12",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-14",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-15",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 4688,
+      "rural": 12491
+    },
+    "development": {
+      "urban": 3,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-17",
+    "name": "Settlement 17",
+    "ownerId": null,
+    "position": {
+      "x": 3254,
+      "y": 3773
+    },
+    "terrain": "hills",
+    "connections": [
+      {
+        "targetId": "settlement-141",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-25",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-19",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-26",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-133",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-16",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1538,
+      "rural": 8190
+    },
+    "development": {
+      "urban": 1,
+      "rural": 8
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-12",
+    "name": "Settlement 12",
+    "ownerId": null,
+    "position": {
+      "x": 519,
+      "y": 3932
+    },
+    "terrain": "forest",
+    "connections": [
+      {
+        "targetId": "settlement-11",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-18",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-13",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3739,
+      "rural": 7473
+    },
+    "development": {
+      "urban": 2,
+      "rural": 10
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-22",
+    "name": "Settlement 22",
+    "ownerId": null,
+    "position": {
+      "x": 3866,
+      "y": 3937
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-142",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-141",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-133",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 1196,
+      "rural": 7931
+    },
+    "development": {
+      "urban": 2,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-133",
+    "name": "Settlement 133",
+    "ownerId": null,
+    "position": {
+      "x": 3555,
+      "y": 3947
+    },
+    "terrain": "water",
+    "connections": [
+      {
+        "targetId": "settlement-141",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-17",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-22",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-16",
+        "type": "disabled"
+      }
+    ],
+    "population": {
+      "urban": 2917,
+      "rural": 8900
+    },
+    "development": {
+      "urban": 3,
+      "rural": 10
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-16",
+    "name": "Settlement 16",
+    "ownerId": null,
+    "position": {
+      "x": 2845,
+      "y": 3968
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-27",
+        "type": "river"
+      },
+      {
+        "targetId": "settlement-26",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-17",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-133",
+        "type": "disabled"
+      },
+      {
+        "targetId": "settlement-15",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3667,
+      "rural": 6708
+    },
+    "development": {
+      "urban": 2,
+      "rural": 9
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-14",
+    "name": "Settlement 14",
+    "ownerId": null,
+    "position": {
+      "x": 1569,
+      "y": 4025
+    },
+    "terrain": "mountains",
+    "connections": [
+      {
+        "targetId": "settlement-13",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-15",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 3742,
+      "rural": 9965
+    },
+    "development": {
+      "urban": 1,
+      "rural": 7
+    },
+    "buildings": []
+  },
+  {
+    "id": "settlement-15",
+    "name": "Settlement 15",
+    "ownerId": null,
+    "position": {
+      "x": 2159,
+      "y": 4032
+    },
+    "terrain": "plain",
+    "connections": [
+      {
+        "targetId": "settlement-27",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-13",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-16",
+        "type": "normal"
+      },
+      {
+        "targetId": "settlement-14",
+        "type": "normal"
+      }
+    ],
+    "population": {
+      "urban": 1975,
+      "rural": 7071
+    },
+    "development": {
+      "urban": 4,
+      "rural": 10
+    },
+    "buildings": []
+  }
+]

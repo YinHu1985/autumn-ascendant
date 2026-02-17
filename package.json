@@ -8,7 +8,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run --environment jsdom",
-    "test:watch": "vitest --environment jsdom"
+    "test:watch": "vitest --environment jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.0",
@@ -36,6 +38,7 @@
     "topojson-server": "^3.0.1",
     "typescript": "^5.4.5",
     "vite": "^5.0.10",
-    "vitest": "^1.6.0"
+    "vitest": "^1.6.0",
+    "gh-pages": "^6.0.0"
   }
 }

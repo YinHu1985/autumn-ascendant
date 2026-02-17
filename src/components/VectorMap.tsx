@@ -95,7 +95,7 @@ export default function VectorMap({
 
   useEffect(() => {
     const img = new Image();
-    img.src = new URL('river.png', import.meta.env.BASE_URL).toString();
+    img.src = `${import.meta.env.BASE_URL}river.png`;
     img.onload = () => {
       riverImageRef.current = img;
       setRiverReady(true);

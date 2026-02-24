@@ -21,6 +21,9 @@ export type CommandType =
   | "SET_TROOP_POSITION"
   | "CHANGE_TROOP_TYPE"
   | "SWAP_TROOP_POSITION"
+  | "UNLOCK_IDEA_SLOT"
+  | "EQUIP_IDEA_SLOT"
+  | "UNEQUIP_IDEA_SLOT"
 
 export interface Command {
   type: CommandType

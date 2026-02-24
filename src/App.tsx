@@ -37,7 +37,9 @@ const initialCountries = [
     color: COUNTRY_COLORS.QII,
     resources: { cash: 100, engineering_practice: 0, military_practice: 0, tradition: {}, stockpile: createEmptyStockpile() },
     researchedTechs: [],
-    adoptedIdeas: []
+    adoptedIdeas: [],
+    ideaSlots: [],
+    unlockedIdeas: []
   },
   {
     id: 'CHU',
@@ -45,7 +47,9 @@ const initialCountries = [
     color: COUNTRY_COLORS.CHU,
     resources: { cash: 100, engineering_practice: 0, military_practice: 0, tradition: {}, stockpile: createEmptyStockpile() },
     researchedTechs: [],
-    adoptedIdeas: []
+    adoptedIdeas: [],
+    ideaSlots: [],
+    unlockedIdeas: []
   },
   {
     id: 'JIN',
@@ -53,7 +57,9 @@ const initialCountries = [
     color: COUNTRY_COLORS.JIN,
     resources: { cash: 100, engineering_practice: 0, military_practice: 0, tradition: {}, stockpile: createEmptyStockpile() },
     researchedTechs: [],
-    adoptedIdeas: []
+    adoptedIdeas: [],
+    ideaSlots: [],
+    unlockedIdeas: []
   }
 ]
 

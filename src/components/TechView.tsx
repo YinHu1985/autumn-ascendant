@@ -6,6 +6,8 @@ import { TechRegistry } from '../systems/TechRegistry'
 import GameController from '../controllers/GameController'
 import { getTechName } from '../utils/localizationUtils'
 import { TechCategory } from '../types/Technology'
+import { checkCommandAllowed } from '../systems/CommandRules'
+import type { GameState } from '../store/gameState'
 
 interface TechViewProps {
   onClose: () => void
@@ -15,6 +17,7 @@ export default function TechView({ onClose }: TechViewProps) {
   const countries = useSelector(selectCountries)
   const playerId = useSelector(selectPlayerCountryId)
   const country = countries[playerId]
+  const gameState = useSelector((state: { gameState: GameState }) => state.gameState)
   const t = (key: string) => LocManager.getInstance().t(key)
   const registry = TechRegistry.getInstance()
   
@@ -22,18 +25,25 @@ export default function TechView({ onClose }: TechViewProps) {
 
   if (!country) return null
 
-  // Helper to check status
-  const getStatus = (techId: string) => {
-    if (country.researchedTechs.includes(techId)) return 'researched'
+  const getTechCheck = (techId: string) => {
     const tech = registry.getTech(techId)
-    if (!tech) return 'locked'
-    
-    // Base secret techs locked by default unless prerequisites met (handled below)
-    // If it has no prereqs and is secret, it's locked.
-    if (tech.category === 'secret' && tech.prerequisites.length === 0) return 'locked'
-
-    const prereqsMet = tech.prerequisites.every(req => country.researchedTechs.includes(req))
-    return prereqsMet ? 'available' : 'locked'
+    if (!tech) {
+      return {
+        status: 'locked' as const,
+        reasons: ['Tech definition missing'],
+      }
+    }
+    const command = {
+      type: 'RESEARCH_TECH' as const,
+      payload: { countryId: playerId, techId },
+    }
+    const result = checkCommandAllowed(gameState, command)
+    const status = country.researchedTechs.includes(techId)
+      ? ('researched' as const)
+      : result.allowed
+      ? ('available' as const)
+      : ('locked' as const)
+    return { status, reasons: result.reasons }
   }
 
   const handleResearch = (techId: string) => {
@@ -73,10 +83,13 @@ export default function TechView({ onClose }: TechViewProps) {
         <div className="flex-1 overflow-y-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
              {techs.map(tech => {
-                const status = getStatus(tech.id)
-                
+                const { status, reasons } = getTechCheck(tech.id)
+                const tooltip = reasons.join('\n')
                 return (
-                  <div key={tech.id} className={`
+                  <div
+                    key={tech.id}
+                    title={status === 'locked' && tooltip ? tooltip : undefined}
+                    className={`
                     p-4 rounded-sm border-2 flex flex-col justify-between h-56 transition-all
                     ${status === 'researched' ? 'bg-antique-paper border-antique-green' : ''}
                     ${status === 'available' ? 'bg-antique-white border-antique-gold shadow-md' : ''}

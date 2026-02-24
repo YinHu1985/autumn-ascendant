@@ -96,18 +96,57 @@ Autumn Ascendant is a Grand Strategy / 4X game set in a fantasy "Spring and Autu
 - **Cost**: Deducts resources instantly.
 
 ## Interaction API (Commands)
-AI Agents should interact **exclusively** via the `Command` interface defined in `src/types/Command.ts`.
+AI agents should interact **exclusively** via the `Command` interface defined in `src/types/Command.ts`.
 
-```typescript
-type CommandType = 
-  | "TICK"            // Advance time (usually internal)
-  | "MOVE_ARMY"       // { armyId, targetSettlementId }
-  | "RESEARCH_TECH"   // { countryId, techId }
-  | "SET_PAUSED"      // boolean
-  | "RESOLVE_EVENT"   // { eventId, optionIndex }
-  | "BATTLE_ACTION"   // { selectedTroopId, targetTroopId }
-  | "CLOSE_BATTLE"    // null
+```ts
+export interface Command {
+  type: CommandType
+  payload: any
+}
 ```
+
+Core command types an AI may care about (non‑exhaustive, see `CommandType` for full list):
+
+- `TICK` – Advance time (normally driven by the engine/UI, not AI).
+- `LOAD_MAP` – Load initial settlements / countries / armies / advisors.
+- `SET_PAUSED` – Pause / unpause the game.
+- `MOVE_ARMY` – `{ armyId, targetSettlementId }`.
+- `INITIATE_ATTACK` – `{ targetSettlementId }`, creates a tactical battle.
+- `BATTLE_ACTION` – `{ actionType, targetTroopId }` in an active battle.
+- `CLOSE_BATTLE` – Finish a battle, teleport armies back, persist damage.
+- `RETREAT_BATTLE` – Force attacker retreat with damage persistence.
+- `RESEARCH_TECH` – `{ countryId, techId }`.
+- `ADOPT_IDEA` – `{ countryId, ideaId }`.
+- `CONSTRUCT_BUILDING` – `{ settlementId, buildingId }`.
+- `TRADE_RESOURCE` – `{ countryId, resourceId, quantity }`.
+- `UNLOCK_IDEA_SLOT` / `EQUIP_IDEA_SLOT` / `UNEQUIP_IDEA_SLOT` – Idea slot management.
+- `HIRE_ADVISOR` / `FIRE_ADVISOR` – Advisor ownership management.
+- `FAST_RECOVER_ARMY` – `{ armyId }`, spends resources to heal troops.
+- `SPAWN_COUNTRY` – `{ settlementId, tag }`, usually emitted by events.
+- `RESOLVE_EVENT` – `{ eventId, optionIndex }`, resolves active narrative events.
+
+### Command handling in the Worker
+
+- The worker owns a **command handler map** in `src/workers/game.worker.ts`:
+  - Key: `CommandType`
+  - Value: `{ execute(ctx, payload) }`
+- Each handler receives a `CommandExecutionContext`:
+  - `dispatch(action)` – Redux dispatch into the worker’s store.
+  - `getState()` – Read‑only access to current `GameState`.
+  - `handleCommand(cmd)` – Dispatch another `Command` through the same map.
+- This allows commands to **chain** other commands. For example:
+  - `RESOLVE_EVENT` looks up the current event and its option.
+  - It calls the event option’s `effect(dispatch, state, context)` with a dispatcher that actually sends new `Command` objects via `handleCommand`.
+  - The “New Nation” event uses this to emit a `SPAWN_COUNTRY` command, which then runs through the normal command pipeline.
+
+### Soft validation vs. hard game logic
+
+- `src/systems/CommandRules.ts` exposes `checkCommandAllowed(state, command)`.
+  - Returns `{ allowed, hardBlock, reasons }`.
+  - Intended as a **soft validation** layer for UI/AI to decide whether to issue a command and to show tooltips.
+- The worker **does not** call `checkCommandAllowed` inside command handlers.
+  - Handlers only enforce true **hard game rules** (e.g., resource sufficiency, entity existence).
+  - This keeps the engine authoritative while allowing the UI/AI to pre‑validate user choices.
 
 ## Localization
 - **System**: `LocManager` singleton.

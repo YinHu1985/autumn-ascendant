@@ -5,6 +5,8 @@ import { LocManager } from '../systems/LocManager'
 import { IdeaRegistry } from '../systems/IdeaRegistry'
 import GameController from '../controllers/GameController'
 import { School, SCHOOLS } from '../types/Country'
+import { checkCommandAllowed } from '../systems/CommandRules'
+import type { GameState } from '../store/gameState'
 
 interface IdeaViewProps {
   onClose: () => void
@@ -14,27 +16,54 @@ export default function IdeaView({ onClose }: IdeaViewProps) {
   const countries = useSelector(selectCountries)
   const playerId = useSelector(selectPlayerCountryId)
   const country = countries[playerId]
+  const gameState = useSelector((state: { gameState: GameState }) => state.gameState)
   const t = (key: string) => LocManager.getInstance().t(key)
   const registry = IdeaRegistry.getInstance()
   
   const [activeSchool, setActiveSchool] = useState<School>('confucianism')
+  const [selectedSlotIndex, setSelectedSlotIndex] = useState<number>(0)
 
   if (!country) return null
 
-  const getStatus = (ideaId: string) => {
-    if (country.adoptedIdeas?.includes(ideaId)) return 'adopted'
+  const slots = country.ideaSlots || []
+  const equippedIds = slots.filter((x): x is string => typeof x === 'string')
+
+  const getIdeaCheck = (ideaId: string) => {
     const idea = registry.getIdea(ideaId)
-    if (!idea) return 'locked'
-    const prereqsMet = idea.prerequisites.every(req => country.adoptedIdeas?.includes(req))
-    return prereqsMet ? 'available' : 'locked'
+    if (!idea) {
+      return {
+        status: 'locked' as const,
+        reasons: ['Idea definition missing'],
+      }
+    }
+    const command = {
+      type: 'EQUIP_IDEA_SLOT' as const,
+      payload: { countryId: playerId, slotIndex: selectedSlotIndex, ideaId },
+    }
+    const result = checkCommandAllowed(gameState, command)
+    const status = equippedIds.includes(ideaId)
+      ? ('adopted' as const)
+      : result.allowed
+      ? ('available' as const)
+      : ('locked' as const)
+    return { status, reasons: result.reasons }
   }
 
-  const handleAdopt = (ideaId: string) => {
-    GameController.getInstance().adoptIdea(playerId, ideaId)
+  const handleEquip = (ideaId: string) => {
+    GameController.getInstance().equipIdeaSlot(playerId, selectedSlotIndex, ideaId)
+  }
+
+  const handleUnlockSlot = () => {
+    GameController.getInstance().unlockIdeaSlot(playerId)
+  }
+
+  const handleUnequip = (index: number) => {
+    GameController.getInstance().unequipIdeaSlot(playerId, index)
   }
 
   const ideas = registry.getIdeasBySchool(activeSchool)
   const currentTradition = country.resources.tradition?.[activeSchool] || 0
+  const maxSlots = 12
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 font-serif">
@@ -44,6 +73,59 @@ export default function IdeaView({ onClose }: IdeaViewProps) {
           <button onClick={onClose} className="text-antique-wood hover:text-antique-red text-2xl font-bold transition-colors">
             {t('common.close')}
           </button>
+        </div>
+
+        <div className="mb-4">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-lg text-antique-dark font-bold">
+              {t('idea.slots')}: {slots.length}/{maxSlots}
+            </span>
+            <button
+              onClick={handleUnlockSlot}
+              disabled={slots.length >= maxSlots}
+              className={`px-3 py-1 text-sm font-bold uppercase rounded-sm border transition-colors
+                ${slots.length < maxSlots
+                  ? 'bg-antique-wood text-antique-white hover:bg-antique-dark border-antique-gold'
+                  : 'bg-gray-400 text-gray-200 border-gray-500 cursor-not-allowed'
+                }`}
+            >
+              {t('idea.unlockSlot')}
+            </button>
+          </div>
+          <div className="flex space-x-2 overflow-x-auto">
+            {Array.from({ length: slots.length }).map((_, index) => {
+              const ideaId = slots[index]
+              const idea = ideaId ? registry.getIdea(ideaId) : null
+              const isSelected = selectedSlotIndex === index
+              return (
+                <button
+                  key={index}
+                  onClick={() => setSelectedSlotIndex(index)}
+                  className={`px-3 py-2 rounded-sm border text-xs flex flex-col items-center min-w-[120px] ${
+                    isSelected ? 'border-antique-gold bg-antique-paper' : 'border-antique-wood bg-antique-white'
+                  }`}
+                >
+                  <span className="font-bold uppercase mb-1">
+                    {t('idea.slot')} {index + 1}
+                  </span>
+                  <span className="text-[11px] text-antique-dark">
+                    {idea ? idea.name : t('idea.empty')}
+                  </span>
+                  {idea && (
+                    <button
+                      onClick={e => {
+                        e.stopPropagation()
+                        handleUnequip(index)
+                      }}
+                      className="mt-1 text-[10px] underline text-antique-red"
+                    >
+                      {t('idea.unequip')}
+                    </button>
+                  )}
+                </button>
+              )
+            })}
+          </div>
         </div>
 
         {/* School Tabs */}
@@ -73,10 +155,13 @@ export default function IdeaView({ onClose }: IdeaViewProps) {
         <div className="flex-1 overflow-y-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
              {ideas.map(idea => {
-                const status = getStatus(idea.id)
-                
+                const { status, reasons } = getIdeaCheck(idea.id)
+                const tooltip = reasons.join('\n')
                 return (
-                  <div key={idea.id} className={`
+                  <div
+                    key={idea.id}
+                    title={status === 'locked' && tooltip ? tooltip : undefined}
+                    className={`
                     p-4 rounded-sm border-2 flex flex-col justify-between h-48 transition-all
                     ${status === 'adopted' ? 'bg-antique-paper border-antique-green' : ''}
                     ${status === 'available' ? 'bg-antique-white border-antique-gold shadow-md' : ''}
@@ -112,7 +197,7 @@ export default function IdeaView({ onClose }: IdeaViewProps) {
 
                     {status === 'available' && (
                       <button 
-                        onClick={() => handleAdopt(idea.id)}
+                        onClick={() => handleEquip(idea.id)}
                         disabled={currentTradition < idea.cost}
                         className={`w-full py-2 font-bold rounded-sm border transition-colors uppercase tracking-wide mt-2
                             ${currentTradition >= idea.cost 

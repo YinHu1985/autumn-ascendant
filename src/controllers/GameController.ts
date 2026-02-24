@@ -98,6 +98,18 @@ class GameController {
     this.sendCommand({ type: 'ADOPT_IDEA', payload: { countryId, ideaId } })
   }
 
+  unlockIdeaSlot(countryId: string) {
+    this.sendCommand({ type: 'UNLOCK_IDEA_SLOT', payload: { countryId } })
+  }
+
+  equipIdeaSlot(countryId: string, slotIndex: number, ideaId: string) {
+    this.sendCommand({ type: 'EQUIP_IDEA_SLOT', payload: { countryId, slotIndex, ideaId } })
+  }
+
+  unequipIdeaSlot(countryId: string, slotIndex: number) {
+    this.sendCommand({ type: 'UNEQUIP_IDEA_SLOT', payload: { countryId, slotIndex } })
+  }
+
   constructBuilding(settlementId: string, buildingId: string) {
     this.sendCommand({ type: 'CONSTRUCT_BUILDING', payload: { settlementId, buildingId } })
   }

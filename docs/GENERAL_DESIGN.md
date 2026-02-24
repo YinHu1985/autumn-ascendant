@@ -27,8 +27,9 @@
 The implementation uses a strict separation between the Game Engine and the Render Layer.
 
 * **Game Engine:** Runs in a Web Worker (`src/workers/game.worker.ts`) and owns the Redux store (`GameState`).  
-* **UI Layer:** React components on the main thread render state and dispatch commands.  
-* **Controller:** `GameController` is a singleton that sends typed command objects from UI to the worker and listens for `STATE_UPDATE` messages.
+* **UI Layer:** React components on the main thread render state and dispatch **Command** objects.  
+* **Controller:** `GameController` is a singleton that sends typed command objects from UI to the worker and listens for `STATE_UPDATE` messages.  
+* **Command Dispatch:** Inside the worker, a command handler map routes each `Command.type` to a specific handler, which receives `{ dispatch, getState, handleCommand }` so that commands can trigger additional commands (e.g. events spawning new countries).
 
 ### **2.2 The Data Core**
 
@@ -70,8 +71,8 @@ A flexible registry system that decouples values from logic. This is the engine 
 
 To ensure fair AI:
 
-* **Input Layer:** A distinct layer processes commands (e.g., CmdMoveArmy, CmdBuildBuilding).  
-* **Parity:** Both the Human UI and the AI Agent send the exact same command objects to the Game Engine. The UI is merely a visualization of the state the AI also sees.
+* **Input Layer:** A distinct layer processes commands (e.g., `MOVE_ARMY`, `CONSTRUCT_BUILDING`, `RESOLVE_EVENT`, `SPAWN_COUNTRY`).  
+* **Parity:** Both the Human UI and the AI Agent send the exact same command objects to the Game Engine. The UI is merely a visualization of the state the AI also sees. Event effects also emit commands through this same interface rather than mutating state directly.
 
 ## ---
 
@@ -149,9 +150,9 @@ The narrative engine driving the game.
 
 ### **6.2 Structure**
 
-* **Conditions:** CanTrigger() checks (Date, Resource, Tech requirements).  
+* **Conditions:** `triggerCondition(state)` checks (Date, Resource, Tech requirements).  
 * **Options:** Events present 1 to $N$ choices.  
-* **Effects:** Each choice executes a script (Add Resource, Add Modifier, Trigger another event).  
+* **Effects:** Each choice executes a script, but instead of mutating `GameState` directly it emits **Commands** via the same `Command` interface used by UI/AI (e.g. resolving an event that dispatches a `SPAWN_COUNTRY` command for a local independence uprising).  
 * **AI Logic:** AI weights are assigned to choices (e.g., "Aggressive AI: 90% chance to choose War").
 
 ## ---

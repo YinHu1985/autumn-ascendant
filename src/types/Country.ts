@@ -129,5 +129,7 @@ export interface Country {
   resources: Resources
   researchedTechs: string[]
   adoptedIdeas: string[]
+  ideaSlots: (string | null)[]
+  unlockedIdeas: string[]
   capitalId: string
 }

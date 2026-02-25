@@ -18,7 +18,8 @@ export function processEconomy(state: GameState): void {
     cash: number, 
     engineering_practice: number,
     military_practice: number,
-    tradition: Record<School, number>
+    tradition: Record<School, number>,
+    stockpile: Record<string, number>
   }> = {}
 
   for (const settlement of settlements) {
@@ -30,13 +31,22 @@ export function processEconomy(state: GameState): void {
       countryDeltas[ownerId] = { 
         cash: 0,
         engineering_practice: 0, military_practice: 0,
-        tradition: SCHOOLS.reduce((acc, s) => ({...acc, [s]: 0}), {} as Record<School, number>)
+        tradition: SCHOOLS.reduce((acc, s) => ({...acc, [s]: 0}), {} as Record<School, number>),
+        stockpile: {}
       }
     }
 
     // Base Production Rules
     // Urban Pop -> Cash (1 per 1000)
     const baseCash = settlement.population.urban / 1000
+
+    // Rural Pop -> Local Product (1 per 1000)
+    if (settlement.localProduct) {
+      const baseResource = settlement.population.rural / 1000
+      const finalResource = registry.calculateValue(baseResource, `production_${settlement.localProduct}`, settlement.id)
+      const current = countryDeltas[ownerId].stockpile[settlement.localProduct] || 0
+      countryDeltas[ownerId].stockpile[settlement.localProduct] = current + finalResource
+    }
 
     // Apply Modifiers
     const finalCash = registry.calculateValue(baseCash, 'production_gold', settlement.id)
@@ -106,6 +116,13 @@ export function processEconomy(state: GameState): void {
       SCHOOLS.forEach(school => {
         country.resources.tradition[school] = (country.resources.tradition[school] || 0) + delta.tradition[school]
       })
+
+      // Apply stockpile deltas
+      if (delta.stockpile) {
+        for (const [rid, amount] of Object.entries(delta.stockpile)) {
+          country.resources.stockpile[rid] = (country.resources.stockpile[rid] || 0) + amount
+        }
+      }
     }
   }
 

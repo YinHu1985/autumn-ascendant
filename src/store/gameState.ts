@@ -315,12 +315,22 @@ const gameStateSlice = createSlice({
 
       // Check cost
       const cost = building.cost
-      if (
-        (cost.gold && country.resources.cash < cost.gold)
-      ) return
+      for (const [res, amount] of Object.entries(cost)) {
+        if (res === 'gold') {
+           if (country.resources.cash < amount) return
+        } else {
+           if ((country.resources.stockpile[res] || 0) < amount) return
+        }
+      }
 
       // Deduct
-      if (cost.gold) country.resources.cash -= cost.gold
+      for (const [res, amount] of Object.entries(cost)) {
+        if (res === 'gold') {
+           country.resources.cash -= amount
+        } else {
+           country.resources.stockpile[res] = (country.resources.stockpile[res] || 0) - amount
+        }
+      }
 
       // Add building
       if (!settlement.buildings) settlement.buildings = []

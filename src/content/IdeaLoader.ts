@@ -47,14 +47,14 @@ const createIdea = (raw: RawIdea): Idea => {
 
   return {
     id: ideaId,
-    name: raw.name,
-    description: `${raw.name} idea of ${raw.school}.`,
+    name: raw.name || `idea.${raw.id}.name`,
+    description: raw.description || `idea.${raw.id}.desc`,
     school: raw.school,
     cost: raw.cost,
     condition, 
     rewardModifiers: [{
       id: `mod_idea_${raw.id}`,
-      name: `${raw.name} Effect`,
+      name: `${raw.name || `idea.${raw.id}.name`} Effect`,
       targetAttribute: modifierTarget,
       operator: 'add_percent',
       value: 0.05

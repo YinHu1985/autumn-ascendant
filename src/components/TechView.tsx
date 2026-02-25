@@ -98,7 +98,7 @@ export default function TechView({ onClose }: TechViewProps) {
                   `}>
                     <div>
                       <div className="flex justify-between items-start mb-2">
-                        <h3 className="font-bold text-lg text-antique-dark leading-tight">{getTechName(tech)}</h3>
+                        <h3 className="font-bold text-lg text-antique-dark leading-tight">{t(tech.name)}</h3>
                         <span className={`text-xs px-2 py-1 rounded-sm font-bold uppercase border whitespace-nowrap
                           ${status === 'researched' ? 'bg-antique-green text-antique-white border-antique-green' : ''}
                           ${status === 'available' ? 'bg-antique-gold text-antique-dark border-antique-gold' : ''}
@@ -107,7 +107,7 @@ export default function TechView({ onClose }: TechViewProps) {
                           {t(`tech.${status}`)}
                         </span>
                       </div>
-                      <p className="text-xs text-gray-600 mb-2 italic">{tech.description}</p>
+                      <p className="text-xs text-gray-600 mb-2 italic">{t(tech.description)}</p>
                       
                       {/* Cost */}
                       {status !== 'researched' && (
@@ -121,7 +121,10 @@ export default function TechView({ onClose }: TechViewProps) {
                       {/* Prereqs */}
                       {extractTechRequirements(tech.condition).length > 0 && (
                          <div className="text-xs text-gray-500 mt-1">
-                           Req: {extractTechRequirements(tech.condition).map(p => registry.getTech(p)?.name).join(', ')}
+                           Req: {extractTechRequirements(tech.condition).map(p => {
+                             const reqTech = registry.getTech(p)
+                             return reqTech ? t(reqTech.name) : p
+                           }).join(', ')}
                          </div>
                       )}
                     </div>

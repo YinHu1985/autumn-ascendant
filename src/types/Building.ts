@@ -5,14 +5,9 @@ export interface Building {
   id: string
   name: string
   description: string
-  cost: {
-    gold?: number
-    food?: number
-    metal?: number
-    horse?: number
-  }
+  cost: Record<string, number>
   modifiers: Modifier[]
-   monthlyMaintenance?: number
+  monthlyMaintenance?: number
    urbanConsumption?: number
    ruralConsumption?: number
    inputStockpile?: Partial<ResourceStockpile>

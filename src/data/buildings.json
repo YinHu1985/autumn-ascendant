@@ -1,176 +1,213 @@
 [
   {
     "id": "bldg_sishu",
-    "name": "私塾 (Private School)",
-    "description": "私塾 (Private School) building.",
-    "cost": { "gold": 100 },
-    "modifiers": [{
-      "id": "mod_bldg_sishu",
-      "name": "私塾 (Private School) Production",
-      "targetAttribute": "monthly_tradition_confucianism",
-      "operator": "add_flat",
-      "value": 1
-    }]
+    "cost": {
+      "gold": 100
+    },
+    "modifiers": [
+      {
+        "id": "mod_bldg_sishu",
+        "name": "私塾 (Private School) Production",
+        "targetAttribute": "monthly_tradition_confucianism",
+        "operator": "add_flat",
+        "value": 1
+      }
+    ]
   },
   {
     "id": "bldg_daoguan",
-    "name": "道观 (Taoist Temple)",
-    "description": "道观 (Taoist Temple) building.",
-    "cost": { "gold": 100 },
-    "modifiers": [{
-      "id": "mod_bldg_daoguan",
-      "name": "道观 (Taoist Temple) Production",
-      "targetAttribute": "monthly_tradition_taoism",
-      "operator": "add_flat",
-      "value": 1
-    }]
+    "cost": {
+      "gold": 100
+    },
+    "modifiers": [
+      {
+        "id": "mod_bldg_daoguan",
+        "name": "道观 (Taoist Temple) Production",
+        "targetAttribute": "monthly_tradition_taoism",
+        "operator": "add_flat",
+        "value": 1
+      }
+    ]
   },
   {
     "id": "bldg_lvlingfu",
-    "name": "律令府 (Law Office)",
-    "description": "律令府 (Law Office) building.",
-    "cost": { "gold": 150 },
-    "modifiers": [{
-      "id": "mod_bldg_lvlingfu",
-      "name": "律令府 (Law Office) Production",
-      "targetAttribute": "monthly_tradition_legalism",
-      "operator": "add_flat",
-      "value": 1
-    }]
+    "cost": {
+      "gold": 150
+    },
+    "modifiers": [
+      {
+        "id": "mod_bldg_lvlingfu",
+        "name": "律令府 (Law Office) Production",
+        "targetAttribute": "monthly_tradition_legalism",
+        "operator": "add_flat",
+        "value": 1
+      }
+    ]
   },
   {
     "id": "bldg_mozhe",
-    "name": "墨者行会 (Mohist Guild)",
-    "description": "墨者行会 (Mohist Guild) building.",
-    "cost": { "gold": 120, "metal": 50 },
-    "modifiers": [{
-      "id": "mod_bldg_mozhe",
-      "name": "墨者行会 (Mohist Guild) Production",
-      "targetAttribute": "monthly_tradition_mohism",
-      "operator": "add_flat",
-      "value": 1
-    }]
+    "cost": {
+      "gold": 120,
+      "iron": 50
+    },
+    "modifiers": [
+      {
+        "id": "mod_bldg_mozhe",
+        "name": "墨者行会 (Mohist Guild) Production",
+        "targetAttribute": "monthly_tradition_mohism",
+        "operator": "add_flat",
+        "value": 1
+      }
+    ]
   },
   {
     "id": "bldg_yanwuchang",
-    "name": "演武场 (Drill Ground)",
-    "description": "演武场 (Drill Ground) building.",
-    "cost": { "gold": 200, "food": 100 },
-    "modifiers": [{
-      "id": "mod_bldg_yanwuchang",
-      "name": "演武场 (Drill Ground) Production",
-      "targetAttribute": "monthly_tradition_military",
-      "operator": "add_flat",
-      "value": 1
-    }]
+    "cost": {
+      "gold": 200,
+      "grain": 100
+    },
+    "modifiers": [
+      {
+        "id": "mod_bldg_yanwuchang",
+        "name": "演武场 (Drill Ground) Production",
+        "targetAttribute": "monthly_tradition_military",
+        "operator": "add_flat",
+        "value": 1
+      }
+    ]
   },
   {
     "id": "bldg_nongshe",
-    "name": "农社 (Farming Society)",
-    "description": "农社 (Farming Society) building.",
-    "cost": { "gold": 80, "food": 50 },
-    "modifiers": [{
-      "id": "mod_bldg_nongshe",
-      "name": "农社 (Farming Society) Production",
-      "targetAttribute": "monthly_tradition_agricultural",
-      "operator": "add_flat",
-      "value": 1
-    }]
+    "cost": {
+      "gold": 80,
+      "grain": 50
+    },
+    "modifiers": [
+      {
+        "id": "mod_bldg_nongshe",
+        "name": "农社 (Farming Society) Production",
+        "targetAttribute": "monthly_tradition_agricultural",
+        "operator": "add_flat",
+        "value": 1
+      }
+    ]
   },
   {
     "id": "bldg_zonghengguan",
-    "name": "纵横馆 (Diplomacy Hall)",
-    "description": "纵横馆 (Diplomacy Hall) building.",
-    "cost": { "gold": 150 },
-    "modifiers": [{
-      "id": "mod_bldg_zonghengguan",
-      "name": "纵横馆 (Diplomacy Hall) Production",
-      "targetAttribute": "monthly_tradition_diplomacy",
-      "operator": "add_flat",
-      "value": 1
-    }]
+    "cost": {
+      "gold": 150
+    },
+    "modifiers": [
+      {
+        "id": "mod_bldg_zonghengguan",
+        "name": "纵横馆 (Diplomacy Hall) Production",
+        "targetAttribute": "monthly_tradition_diplomacy",
+        "operator": "add_flat",
+        "value": 1
+      }
+    ]
   },
   {
     "id": "bldg_biantan",
-    "name": "辩坛 (Debate Platform)",
-    "description": "辩坛 (Debate Platform) building.",
-    "cost": { "gold": 100 },
-    "modifiers": [{
-      "id": "mod_bldg_biantan",
-      "name": "辩坛 (Debate Platform) Production",
-      "targetAttribute": "monthly_tradition_logicians",
-      "operator": "add_flat",
-      "value": 1
-    }]
+    "cost": {
+      "gold": 100
+    },
+    "modifiers": [
+      {
+        "id": "mod_bldg_biantan",
+        "name": "辩坛 (Debate Platform) Production",
+        "targetAttribute": "monthly_tradition_logicians",
+        "operator": "add_flat",
+        "value": 1
+      }
+    ]
   },
   {
     "id": "bldg_zajiayuan",
-    "name": "杂家院 (Misc Courtyard)",
-    "description": "杂家院 (Misc Courtyard) building.",
-    "cost": { "gold": 100 },
-    "modifiers": [{
-      "id": "mod_bldg_zajiayuan",
-      "name": "杂家院 (Misc Courtyard) Production",
-      "targetAttribute": "monthly_tradition_misc",
-      "operator": "add_flat",
-      "value": 1
-    }]
+    "cost": {
+      "gold": 100
+    },
+    "modifiers": [
+      {
+        "id": "mod_bldg_zajiayuan",
+        "name": "杂家院 (Misc Courtyard) Production",
+        "targetAttribute": "monthly_tradition_misc",
+        "operator": "add_flat",
+        "value": 1
+      }
+    ]
   },
   {
     "id": "bldg_gongfang",
-    "name": "工坊 (Workshop)",
-    "description": "工坊 (Workshop) building.",
-    "cost": { "gold": 200, "metal": 100 },
-    "modifiers": [{
-      "id": "mod_bldg_gongfang",
-      "name": "工坊 (Workshop) Production",
-      "targetAttribute": "monthly_engineering_practice",
-      "operator": "add_flat",
-      "value": 5
-    }]
+    "cost": {
+      "gold": 200,
+      "metal": 100
+    },
+    "modifiers": [
+      {
+        "id": "mod_bldg_gongfang",
+        "name": "工坊 (Workshop) Production",
+        "targetAttribute": "monthly_engineering_practice",
+        "operator": "add_flat",
+        "value": 5
+      }
+    ]
   },
   {
     "id": "bldg_bingying",
-    "name": "兵营 (Barracks)",
-    "description": "兵营 (Barracks) building.",
-    "cost": { "gold": 300, "food": 200 },
-    "modifiers": [{
-      "id": "mod_bldg_bingying",
-      "name": "兵营 (Barracks) Production",
-      "targetAttribute": "monthly_military_practice",
-      "operator": "add_flat",
-      "value": 5
-    }]
+    "cost": {
+      "gold": 300,
+      "food": 200
+    },
+    "modifiers": [
+      {
+        "id": "mod_bldg_bingying",
+        "name": "兵营 (Barracks) Production",
+        "targetAttribute": "monthly_military_practice",
+        "operator": "add_flat",
+        "value": 5
+      }
+    ]
   },
   {
     "id": "bldg_forestry",
-    "name": "Forestry",
-    "description": "Produces logs from rural labor.",
-    "cost": { "gold": 100 },
+    "cost": {
+      "gold": 100
+    },
     "modifiers": [],
     "monthlyMaintenance": 1,
     "inputStockpile": {},
-    "outputStockpile": { "logs": 5 },
+    "outputStockpile": {
+      "logs": 5
+    },
     "requiredProduct": "logs"
   },
   {
     "id": "bldg_lumber_mill",
-    "name": "Lumber Mill",
-    "description": "Turns logs into lumber.",
-    "cost": { "gold": 150 },
+    "cost": {
+      "gold": 150
+    },
     "modifiers": [],
     "monthlyMaintenance": 2,
-    "inputStockpile": { "logs": 4 },
-    "outputStockpile": { "lumber": 2 }
+    "inputStockpile": {
+      "logs": 4
+    },
+    "outputStockpile": {
+      "lumber": 2
+    }
   },
   {
     "id": "bldg_furniture_workshop",
-    "name": "Furniture Workshop",
-    "description": "Uses lumber to produce furniture.",
-    "cost": { "gold": 200 },
+    "cost": {
+      "gold": 200
+    },
     "modifiers": [],
     "monthlyMaintenance": 3,
-    "inputStockpile": { "lumber": 3 },
-    "outputStockpile": { "furniture": 1 }
+    "inputStockpile": {
+      "lumber": 3
+    },
+    "outputStockpile": {
+      "furniture": 1
+    }
   }
 ]

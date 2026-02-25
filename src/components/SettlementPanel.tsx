@@ -136,7 +136,7 @@ export default function SettlementPanel({ settlementId, onClose }: SettlementPan
                const b = buildingRegistry.getBuilding(bId)
                return (
                  <div key={`b-${idx}`} className="aspect-square bg-antique-gold border-2 border-antique-wood rounded-sm flex items-center justify-center text-xs text-antique-dark font-bold shadow-sm p-1 text-center leading-tight">
-                   {b ? b.name : bId}
+                   {b ? t(b.name) : bId}
                  </div>
                )
             })}

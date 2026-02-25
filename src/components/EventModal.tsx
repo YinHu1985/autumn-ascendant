@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { selectActiveEventId, selectActiveEventContext } from '../store/gameState'
 import { EventManager } from '../systems/EventManager'
+import { LocManager } from '../systems/LocManager'
 import GameController from '../controllers/GameController'
 import type { RootState } from '../store'
 
@@ -16,12 +17,14 @@ export default function EventModal() {
 
   if (!event) return null
 
+  const t = (key: string) => LocManager.getInstance().t(key)
+
   const handleOptionClick = (optionIndex: number) => {
     GameController.getInstance().resolveEvent(activeEventId, optionIndex)
   }
 
   // Format description with context
-  let description = event.description
+  let description = t(event.description)
   if (activeEventContext) {
     console.log('[EventModal] Context:', activeEventContext)
     Object.keys(activeEventContext).forEach(key => {
@@ -38,7 +41,7 @@ export default function EventModal() {
         <div className="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-antique-gold"></div>
         <div className="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-antique-gold"></div>
 
-        <h2 className="text-3xl font-bold mb-6 text-antique-dark tracking-widest uppercase border-b-2 border-antique-gold pb-4 text-center">{event.title}</h2>
+        <h2 className="text-3xl font-bold mb-6 text-antique-dark tracking-widest uppercase border-b-2 border-antique-gold pb-4 text-center">{t(event.title)}</h2>
         <div className="text-xl mb-10 font-medium leading-relaxed text-antique-dark/90 whitespace-pre-line text-center italic">
           {description}
         </div>
@@ -51,7 +54,7 @@ export default function EventModal() {
               className="group relative bg-antique-wood text-antique-white font-bold py-4 px-6 rounded-sm transition-all hover:bg-antique-paper hover:text-antique-dark border-2 border-antique-wood shadow-md hover:shadow-lg overflow-hidden"
             >
               <span className="relative z-10 flex items-center justify-between">
-                <span>{option.text}</span>
+                <span>{t(option.text)}</span>
                 <span className="opacity-0 group-hover:opacity-100 transition-opacity text-antique-red">❧</span>
               </span>
             </button>

@@ -15,6 +15,8 @@ export const generateInitialAdvisors = (settlementIds: string[]): Advisor[] => {
 
     return {
       ...data,
+      name: data.name || `advisor.${data.id}.name`,
+      biography: data.biography || `advisor.${data.id}.desc`,
       level: data.level as 1 | 2 | 3 | 4 | 5,
       location,
       ownerId: null, // Initially unhired

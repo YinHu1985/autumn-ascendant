@@ -23,9 +23,9 @@ const createEventEffect = (command: { type: string, payload: any }) => {
   }
 }
 
-const createEventOption = (raw: RawEventOption): EventOption => {
+const createEventOption = (raw: RawEventOption, eventId: string, index: number): EventOption => {
   return {
-    text: raw.text,
+    text: raw.text || `event.${eventId}.options.${index}.text`,
     effect: raw.effectCommand ? createEventEffect(raw.effectCommand) : () => {}
   }
 }
@@ -33,9 +33,9 @@ const createEventOption = (raw: RawEventOption): EventOption => {
 const createEvent = (raw: RawEvent): GameEvent => {
   return {
     id: raw.id,
-    title: raw.title,
-    description: raw.description,
-    options: raw.options.map(createEventOption),
+    title: raw.title || `event.${raw.id}.title`,
+    description: raw.description || `event.${raw.id}.desc`,
+    options: raw.options.map((opt, idx) => createEventOption(opt, raw.id, idx)),
     condition: raw.condition,
     maxFires: raw.maxFires,
     // triggerCondition is optional and we use condition for JSON events

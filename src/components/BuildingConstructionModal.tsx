@@ -54,8 +54,8 @@ export default function BuildingConstructionModal({ settlementId, onClose }: Bui
                 return (
                   <div key={building.id} className="p-4 rounded-sm border-2 border-antique-gold bg-antique-white shadow-md flex flex-col justify-between h-48">
                     <div>
-                      <h3 className="font-bold text-lg text-antique-dark mb-1">{building.name}</h3>
-                      <p className="text-xs text-gray-600 mb-2 italic">{building.description}</p>
+                      <h3 className="font-bold text-lg text-antique-dark mb-1">{t(building.name)}</h3>
+                      <p className="text-xs text-gray-600 mb-2 italic">{t(building.description)}</p>
                       
                       <div className="text-sm text-antique-wood mb-2 font-serif grid grid-cols-2 gap-1">
                           {building.cost.gold && <span className="text-antique-gold font-bold">{building.cost.gold} Cash</span>}

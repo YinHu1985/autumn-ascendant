@@ -21,6 +21,7 @@ function makeEmptyGameState(): GameState {
     playerCountryId: 'C1',
     firedEvents: {},
     activeEventContext: null,
+    randomSeed: 12345,
   }
 }
 
@@ -153,5 +154,33 @@ describe('EconomySystem - processEconomy', () => {
     expect(resources.cash).toBeCloseTo(95) // maintenance
     expect(resources.stockpile['grain']).toBe(8)
     expect(resources.stockpile['paper']).toBe(1)
+  })
+
+  it('produces local product from rural population', () => {
+    const state = makeEmptyGameState()
+    const country = makeCountry()
+    // Initialize stockpile with 0 for the resource we test
+    country.resources.stockpile['grain'] = 0
+    
+    state.countries[country.id] = country
+    state.settlements = [
+      {
+        id: 'S1',
+        name: 'City',
+        ownerId: country.id,
+        position: { x: 0, y: 0 },
+        terrain: 'plain',
+        connections: [],
+        localProduct: 'grain',
+        population: { urban: 0, rural: 5000 },
+        development: { urban: 0, rural: 0 },
+        buildings: [],
+      },
+    ]
+
+    processEconomy(state)
+
+    // 5000 / 1000 = 5 grain
+    expect(state.countries[country.id].resources.stockpile['grain']).toBeCloseTo(5)
   })
 })

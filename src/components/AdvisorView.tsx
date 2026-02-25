@@ -68,10 +68,10 @@ export default function AdvisorView({ onClose }: AdvisorViewProps) {
                         <div className="w-16 h-16 bg-antique-wood rounded-full border-2 border-antique-gold mb-1 overflow-hidden">
                              {/* Portrait Placeholder */}
                              <div className="w-full h-full bg-gray-300 flex items-center justify-center text-xs text-gray-500">
-                                {advisor.name[0]}
+                                {t(advisor.name)[0]}
                              </div>
                         </div>
-                        <div className="text-sm font-bold text-antique-dark text-center leading-tight">{advisor.name}</div>
+                        <div className="text-sm font-bold text-antique-dark text-center leading-tight">{t(advisor.name)}</div>
                         <div className="text-xs text-antique-wood">Lv.{advisor.level}</div>
                     </div>
                 ))}
@@ -101,7 +101,7 @@ export default function AdvisorView({ onClose }: AdvisorViewProps) {
                                 ${selectedAdvisorId === advisor.id ? 'bg-antique-gold/20 border-antique-gold' : 'hover:bg-antique-wood/5'}
                             `}
                         >
-                            <span className="font-bold text-antique-dark">{advisor.name}</span>
+                            <span className="font-bold text-antique-dark">{t(advisor.name)}</span>
                             <span className="text-xs text-antique-wood bg-antique-white px-1 rounded border border-antique-wood/20">
                                 Lv.{advisor.level}
                             </span>
@@ -117,12 +117,12 @@ export default function AdvisorView({ onClose }: AdvisorViewProps) {
                         <div className="flex gap-6 mb-6">
                             {/* Portrait Large */}
                             <div className="w-32 h-32 bg-antique-wood rounded border-4 border-double border-antique-gold flex-shrink-0 flex items-center justify-center overflow-hidden">
-                                <div className="text-4xl text-antique-white">{selectedAdvisor.name[0]}</div>
+                                <div className="text-4xl text-antique-white">{t(selectedAdvisor.name)[0]}</div>
                             </div>
                             
                             {/* Stats */}
                             <div className="flex-1">
-                                <h2 className="text-3xl font-bold text-antique-dark mb-2">{selectedAdvisor.name}</h2>
+                                <h2 className="text-3xl font-bold text-antique-dark mb-2">{t(selectedAdvisor.name)}</h2>
                                 <div className="grid grid-cols-2 gap-4 text-sm">
                                     <div className="flex flex-col">
                                         <span className="text-antique-wood uppercase text-xs">Level</span>
@@ -146,7 +146,7 @@ export default function AdvisorView({ onClose }: AdvisorViewProps) {
                         <div className="mb-6">
                             <h3 className="text-lg font-bold text-antique-wood border-b border-antique-gold mb-2">Biography</h3>
                             <p className="text-antique-dark/80 italic leading-relaxed">
-                                {selectedAdvisor.biography}
+                                {t(selectedAdvisor.biography)}
                             </p>
                         </div>
 

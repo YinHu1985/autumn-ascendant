@@ -2,7 +2,6 @@
   {
     "id": "settlement-1",
     "name": "Settlement 1",
-    "ownerId": null,
     "position": {
       "x": 581,
       "y": 633
@@ -39,7 +38,6 @@
   {
     "id": "settlement-2",
     "name": "Settlement 2",
-    "ownerId": null,
     "position": {
       "x": 1777,
       "y": 337
@@ -88,7 +86,6 @@
   {
     "id": "settlement-3",
     "name": "Settlement 3",
-    "ownerId": null,
     "position": {
       "x": 2705,
       "y": 193
@@ -125,7 +122,6 @@
   {
     "id": "settlement-4",
     "name": "Settlement 4",
-    "ownerId": null,
     "position": {
       "x": 3170,
       "y": 142
@@ -166,7 +162,6 @@
   {
     "id": "settlement-5",
     "name": "Settlement 5",
-    "ownerId": null,
     "position": {
       "x": 3603,
       "y": 296
@@ -203,7 +198,6 @@
   {
     "id": "settlement-6",
     "name": "Settlement 6",
-    "ownerId": null,
     "position": {
       "x": 3972,
       "y": 462
@@ -236,7 +230,6 @@
   {
     "id": "settlement-126",
     "name": "Settlement 126",
-    "ownerId": null,
     "position": {
       "x": 2557,
       "y": 444
@@ -285,7 +278,6 @@
   {
     "id": "settlement-131",
     "name": "Settlement 131",
-    "ownerId": null,
     "position": {
       "x": 3111,
       "y": 396
@@ -322,7 +314,6 @@
   {
     "id": "settlement-130",
     "name": "Settlement 130",
-    "ownerId": null,
     "position": {
       "x": 2885,
       "y": 446
@@ -367,7 +358,6 @@
   {
     "id": "settlement-134",
     "name": "Settlement 134",
-    "ownerId": null,
     "position": {
       "x": 3119,
       "y": 693
@@ -424,7 +414,6 @@
   {
     "id": "settlement-125",
     "name": "Settlement 125",
-    "ownerId": null,
     "position": {
       "x": 2296,
       "y": 605
@@ -465,7 +454,6 @@
   {
     "id": "settlement-136",
     "name": "Settlement 136",
-    "ownerId": null,
     "position": {
       "x": 3482,
       "y": 865
@@ -514,7 +502,6 @@
   {
     "id": "settlement-137",
     "name": "Settlement 137",
-    "ownerId": null,
     "position": {
       "x": 3862,
       "y": 841
@@ -551,7 +538,6 @@
   {
     "id": "settlement-127",
     "name": "Settlement 127",
-    "ownerId": null,
     "position": {
       "x": 2518,
       "y": 727
@@ -592,7 +578,6 @@
   {
     "id": "settlement-129",
     "name": "Settlement 129",
-    "ownerId": null,
     "position": {
       "x": 2811,
       "y": 655
@@ -633,7 +618,6 @@
   {
     "id": "settlement-132",
     "name": "Settlement 132",
-    "ownerId": null,
     "position": {
       "x": 2941,
       "y": 659
@@ -670,7 +654,6 @@
   {
     "id": "settlement-9",
     "name": "Settlement 9",
-    "ownerId": null,
     "position": {
       "x": 1352,
       "y": 971
@@ -715,7 +698,6 @@
   {
     "id": "settlement-128",
     "name": "Settlement 128",
-    "ownerId": null,
     "position": {
       "x": 2686,
       "y": 711
@@ -756,7 +738,6 @@
   {
     "id": "settlement-124",
     "name": "Settlement 124",
-    "ownerId": null,
     "position": {
       "x": 2274,
       "y": 816
@@ -797,7 +778,6 @@
   {
     "id": "settlement-122",
     "name": "Settlement 122",
-    "ownerId": null,
     "position": {
       "x": 1997,
       "y": 836
@@ -838,7 +818,6 @@
   {
     "id": "settlement-123",
     "name": "Settlement 123",
-    "ownerId": null,
     "position": {
       "x": 2507,
       "y": 963
@@ -895,7 +874,6 @@
   {
     "id": "settlement-88",
     "name": "Settlement 88",
-    "ownerId": null,
     "position": {
       "x": 1816,
       "y": 1093
@@ -944,7 +922,6 @@
   {
     "id": "settlement-135",
     "name": "Settlement 135",
-    "ownerId": null,
     "position": {
       "x": 2966,
       "y": 1061
@@ -989,7 +966,6 @@
   {
     "id": "settlement-121",
     "name": "Settlement 121",
-    "ownerId": null,
     "position": {
       "x": 2207,
       "y": 1037
@@ -1034,7 +1010,6 @@
   {
     "id": "settlement-75",
     "name": "Settlement 75",
-    "ownerId": null,
     "position": {
       "x": 1642,
       "y": 1189
@@ -1071,7 +1046,6 @@
   {
     "id": "settlement-108",
     "name": "Settlement 108",
-    "ownerId": null,
     "position": {
       "x": 2712,
       "y": 1205
@@ -1120,7 +1094,6 @@
   {
     "id": "settlement-138",
     "name": "Settlement 138",
-    "ownerId": null,
     "position": {
       "x": 3541,
       "y": 1387
@@ -1169,7 +1142,6 @@
   {
     "id": "settlement-7",
     "name": "Settlement 7",
-    "ownerId": null,
     "position": {
       "x": 299,
       "y": 1483
@@ -1206,7 +1178,6 @@
   {
     "id": "settlement-109",
     "name": "Settlement 109",
-    "ownerId": null,
     "position": {
       "x": 2511,
       "y": 1287
@@ -1251,7 +1222,6 @@
   {
     "id": "settlement-97",
     "name": "Settlement 97",
-    "ownerId": "CHU",
     "position": {
       "x": 3286,
       "y": 1244
@@ -1291,12 +1261,12 @@
       "urban": 2,
       "rural": 9
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "CHU"
   },
   {
     "id": "settlement-120",
     "name": "Settlement 120",
-    "ownerId": null,
     "position": {
       "x": 2075,
       "y": 1230
@@ -1345,7 +1315,6 @@
   {
     "id": "settlement-119",
     "name": "Settlement 119",
-    "ownerId": null,
     "position": {
       "x": 2379,
       "y": 1223
@@ -1386,7 +1355,6 @@
   {
     "id": "settlement-142",
     "name": "Settlement 142",
-    "ownerId": null,
     "position": {
       "x": 3940,
       "y": 2215
@@ -1431,7 +1399,6 @@
   {
     "id": "settlement-8",
     "name": "Settlement 8",
-    "ownerId": null,
     "position": {
       "x": 986,
       "y": 1574
@@ -1484,7 +1451,6 @@
   {
     "id": "settlement-98",
     "name": "Settlement 98",
-    "ownerId": "CHU",
     "position": {
       "x": 2955,
       "y": 1331
@@ -1520,12 +1486,12 @@
       "urban": 3,
       "rural": 1
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "CHU"
   },
   {
     "id": "settlement-87",
     "name": "Settlement 87",
-    "ownerId": null,
     "position": {
       "x": 1796,
       "y": 1502
@@ -1570,7 +1536,6 @@
   {
     "id": "settlement-74",
     "name": "Settlement 74",
-    "ownerId": null,
     "position": {
       "x": 1520,
       "y": 1544
@@ -1623,7 +1588,6 @@
   {
     "id": "settlement-118",
     "name": "Settlement 118",
-    "ownerId": null,
     "position": {
       "x": 2284,
       "y": 1410
@@ -1668,7 +1632,6 @@
   {
     "id": "settlement-99",
     "name": "Settlement 99",
-    "ownerId": null,
     "position": {
       "x": 2815,
       "y": 1451
@@ -1709,7 +1672,6 @@
   {
     "id": "settlement-115",
     "name": "Settlement 115",
-    "ownerId": null,
     "position": {
       "x": 1952,
       "y": 1670
@@ -1758,7 +1720,6 @@
   {
     "id": "settlement-117",
     "name": "Settlement 117",
-    "ownerId": null,
     "position": {
       "x": 2103,
       "y": 1555
@@ -1795,7 +1756,6 @@
   {
     "id": "settlement-96",
     "name": "Settlement 96",
-    "ownerId": "CHU",
     "position": {
       "x": 3039,
       "y": 1480
@@ -1835,12 +1795,12 @@
       "urban": 1,
       "rural": 7
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "CHU"
   },
   {
     "id": "settlement-110",
     "name": "Settlement 110",
-    "ownerId": null,
     "position": {
       "x": 2567,
       "y": 1490
@@ -1881,7 +1841,6 @@
   {
     "id": "settlement-100",
     "name": "Settlement 100",
-    "ownerId": null,
     "position": {
       "x": 2689,
       "y": 1611
@@ -1926,7 +1885,6 @@
   {
     "id": "settlement-95",
     "name": "Settlement 95",
-    "ownerId": "CHU",
     "position": {
       "x": 3173,
       "y": 1512
@@ -1962,12 +1920,12 @@
       "urban": 2,
       "rural": 1
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "CHU"
   },
   {
     "id": "settlement-112",
     "name": "Settlement 112",
-    "ownerId": null,
     "position": {
       "x": 2422,
       "y": 1559
@@ -2012,7 +1970,6 @@
   {
     "id": "settlement-93",
     "name": "Settlement 93",
-    "ownerId": null,
     "position": {
       "x": 2872,
       "y": 1648
@@ -2061,7 +2018,6 @@
   {
     "id": "settlement-73",
     "name": "Settlement 73",
-    "ownerId": null,
     "position": {
       "x": 1324,
       "y": 1724
@@ -2098,7 +2054,6 @@
   {
     "id": "settlement-116",
     "name": "Settlement 116",
-    "ownerId": null,
     "position": {
       "x": 2221,
       "y": 1725
@@ -2147,7 +2102,6 @@
   {
     "id": "settlement-94",
     "name": "Settlement 94",
-    "ownerId": "CHU",
     "position": {
       "x": 3043,
       "y": 1599
@@ -2179,12 +2133,12 @@
       "urban": 2,
       "rural": 8
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "CHU"
   },
   {
     "id": "settlement-111",
     "name": "Settlement 111",
-    "ownerId": null,
     "position": {
       "x": 2514,
       "y": 1683
@@ -2233,7 +2187,6 @@
   {
     "id": "settlement-91",
     "name": "Settlement 91",
-    "ownerId": null,
     "position": {
       "x": 3073,
       "y": 1696
@@ -2282,7 +2235,6 @@
   {
     "id": "settlement-113",
     "name": "Settlement 113",
-    "ownerId": null,
     "position": {
       "x": 2391,
       "y": 1723
@@ -2319,7 +2271,6 @@
   {
     "id": "settlement-86",
     "name": "Settlement 86",
-    "ownerId": null,
     "position": {
       "x": 1843,
       "y": 1828
@@ -2360,7 +2311,6 @@
   {
     "id": "settlement-139",
     "name": "Settlement 139",
-    "ownerId": null,
     "position": {
       "x": 3426,
       "y": 1900
@@ -2409,7 +2359,6 @@
   {
     "id": "settlement-92",
     "name": "Settlement 92",
-    "ownerId": null,
     "position": {
       "x": 2862,
       "y": 1783
@@ -2454,7 +2403,6 @@
   {
     "id": "settlement-10",
     "name": "Settlement 10",
-    "ownerId": "JIN",
     "position": {
       "x": 390,
       "y": 1920
@@ -2494,12 +2442,12 @@
       "urban": 4,
       "rural": 6
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "JIN"
   },
   {
     "id": "settlement-101",
     "name": "Settlement 101",
-    "ownerId": null,
     "position": {
       "x": 2612,
       "y": 1826
@@ -2548,7 +2496,6 @@
   {
     "id": "settlement-114",
     "name": "Settlement 114",
-    "ownerId": null,
     "position": {
       "x": 2348,
       "y": 1815
@@ -2589,7 +2536,6 @@
   {
     "id": "settlement-89",
     "name": "Settlement 89",
-    "ownerId": null,
     "position": {
       "x": 3042,
       "y": 1819
@@ -2630,7 +2576,6 @@
   {
     "id": "settlement-72",
     "name": "Settlement 72",
-    "ownerId": null,
     "position": {
       "x": 1513,
       "y": 1941
@@ -2675,7 +2620,6 @@
   {
     "id": "settlement-90",
     "name": "Settlement 90",
-    "ownerId": null,
     "position": {
       "x": 2892,
       "y": 1887
@@ -2712,7 +2656,6 @@
   {
     "id": "settlement-37",
     "name": "Settlement 37",
-    "ownerId": "JIN",
     "position": {
       "x": 898,
       "y": 1919
@@ -2744,12 +2687,12 @@
       "urban": 3,
       "rural": 4
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "JIN"
   },
   {
     "id": "settlement-107",
     "name": "Settlement 107",
-    "ownerId": null,
     "position": {
       "x": 2430,
       "y": 1907
@@ -2798,7 +2741,6 @@
   {
     "id": "settlement-76",
     "name": "Settlement 76",
-    "ownerId": null,
     "position": {
       "x": 3089,
       "y": 1928
@@ -2847,7 +2789,6 @@
   {
     "id": "settlement-78",
     "name": "Settlement 78",
-    "ownerId": null,
     "position": {
       "x": 2833,
       "y": 2042
@@ -2904,7 +2845,6 @@
   {
     "id": "settlement-85",
     "name": "Settlement 85",
-    "ownerId": null,
     "position": {
       "x": 1757,
       "y": 1925
@@ -2945,7 +2885,6 @@
   {
     "id": "settlement-38",
     "name": "Settlement 38",
-    "ownerId": "JIN",
     "position": {
       "x": 1149,
       "y": 1981
@@ -2989,12 +2928,12 @@
       "urban": 4,
       "rural": 5
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "JIN"
   },
   {
     "id": "settlement-106",
     "name": "Settlement 106",
-    "ownerId": null,
     "position": {
       "x": 2238,
       "y": 1952
@@ -3039,7 +2978,6 @@
   {
     "id": "settlement-11",
     "name": "Settlement 11",
-    "ownerId": null,
     "position": {
       "x": 302,
       "y": 3007
@@ -3088,7 +3026,6 @@
   {
     "id": "settlement-84",
     "name": "Settlement 84",
-    "ownerId": null,
     "position": {
       "x": 1980,
       "y": 2030
@@ -3141,7 +3078,6 @@
   {
     "id": "settlement-102",
     "name": "Settlement 102",
-    "ownerId": null,
     "position": {
       "x": 2605,
       "y": 1975
@@ -3182,7 +3118,6 @@
   {
     "id": "settlement-105",
     "name": "Settlement 105",
-    "ownerId": null,
     "position": {
       "x": 2321,
       "y": 2067
@@ -3227,7 +3162,6 @@
   {
     "id": "settlement-59",
     "name": "Settlement 59",
-    "ownerId": null,
     "position": {
       "x": 3309,
       "y": 2128
@@ -3264,7 +3198,6 @@
   {
     "id": "settlement-71",
     "name": "Settlement 71",
-    "ownerId": null,
     "position": {
       "x": 1341,
       "y": 2052
@@ -3301,7 +3234,6 @@
   {
     "id": "settlement-36",
     "name": "Settlement 36",
-    "ownerId": "JIN",
     "position": {
       "x": 822,
       "y": 2186
@@ -3341,12 +3273,12 @@
       "urban": 2,
       "rural": 3
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "JIN"
   },
   {
     "id": "settlement-70",
     "name": "Settlement 70",
-    "ownerId": null,
     "position": {
       "x": 1627,
       "y": 2089
@@ -3391,7 +3323,6 @@
   {
     "id": "settlement-103",
     "name": "Settlement 103",
-    "ownerId": null,
     "position": {
       "x": 2484,
       "y": 2079
@@ -3432,7 +3363,6 @@
   {
     "id": "settlement-77",
     "name": "Settlement 77",
-    "ownerId": null,
     "position": {
       "x": 3064,
       "y": 2077
@@ -3469,7 +3399,6 @@
   {
     "id": "settlement-140",
     "name": "Settlement 140",
-    "ownerId": null,
     "position": {
       "x": 3771,
       "y": 2452
@@ -3538,7 +3467,6 @@
   {
     "id": "settlement-60",
     "name": "Settlement 60",
-    "ownerId": null,
     "position": {
       "x": 3174,
       "y": 2195
@@ -3583,7 +3511,6 @@
   {
     "id": "settlement-80",
     "name": "Settlement 80",
-    "ownerId": null,
     "position": {
       "x": 2636,
       "y": 2157
@@ -3628,7 +3555,6 @@
   {
     "id": "settlement-83",
     "name": "Settlement 83",
-    "ownerId": null,
     "position": {
       "x": 2169,
       "y": 2194
@@ -3677,7 +3603,6 @@
   {
     "id": "settlement-39",
     "name": "Settlement 39",
-    "ownerId": null,
     "position": {
       "x": 1343,
       "y": 2273
@@ -3730,7 +3655,6 @@
   {
     "id": "settlement-104",
     "name": "Settlement 104",
-    "ownerId": null,
     "position": {
       "x": 2425,
       "y": 2210
@@ -3775,7 +3699,6 @@
   {
     "id": "settlement-69",
     "name": "Settlement 69",
-    "ownerId": null,
     "position": {
       "x": 1805,
       "y": 2269
@@ -3828,7 +3751,6 @@
   {
     "id": "settlement-34",
     "name": "Settlement 34",
-    "ownerId": null,
     "position": {
       "x": 604,
       "y": 2318
@@ -3869,7 +3791,6 @@
   {
     "id": "settlement-61",
     "name": "Settlement 61",
-    "ownerId": null,
     "position": {
       "x": 3017,
       "y": 2328
@@ -3918,7 +3839,6 @@
   {
     "id": "settlement-79",
     "name": "Settlement 79",
-    "ownerId": null,
     "position": {
       "x": 2775,
       "y": 2242
@@ -3959,7 +3879,6 @@
   {
     "id": "settlement-81",
     "name": "Settlement 81",
-    "ownerId": null,
     "position": {
       "x": 2585,
       "y": 2300
@@ -4004,7 +3923,6 @@
   {
     "id": "settlement-68",
     "name": "Settlement 68",
-    "ownerId": null,
     "position": {
       "x": 2054,
       "y": 2301
@@ -4041,7 +3959,6 @@
   {
     "id": "settlement-23",
     "name": "Settlement 23",
-    "ownerId": null,
     "position": {
       "x": 3509,
       "y": 2241
@@ -4066,7 +3983,6 @@
   {
     "id": "settlement-82",
     "name": "Settlement 82",
-    "ownerId": null,
     "position": {
       "x": 2378,
       "y": 2362
@@ -4115,7 +4031,6 @@
   {
     "id": "settlement-62",
     "name": "Settlement 62",
-    "ownerId": null,
     "position": {
       "x": 2837,
       "y": 2435
@@ -4160,7 +4075,6 @@
   {
     "id": "settlement-66",
     "name": "Settlement 66",
-    "ownerId": null,
     "position": {
       "x": 2152,
       "y": 2448
@@ -4209,7 +4123,6 @@
   {
     "id": "settlement-56",
     "name": "Settlement 56",
-    "ownerId": null,
     "position": {
       "x": 3257,
       "y": 2427
@@ -4262,7 +4175,6 @@
   {
     "id": "settlement-55",
     "name": "Settlement 55",
-    "ownerId": null,
     "position": {
       "x": 3506,
       "y": 2414
@@ -4299,7 +4211,6 @@
   {
     "id": "settlement-63",
     "name": "Settlement 63",
-    "ownerId": null,
     "position": {
       "x": 2645,
       "y": 2450
@@ -4340,7 +4251,6 @@
   {
     "id": "settlement-67",
     "name": "Settlement 67",
-    "ownerId": null,
     "position": {
       "x": 2013,
       "y": 2436
@@ -4381,7 +4291,6 @@
   {
     "id": "settlement-30",
     "name": "Settlement 30",
-    "ownerId": null,
     "position": {
       "x": 1273,
       "y": 2750
@@ -4430,7 +4339,6 @@
   {
     "id": "settlement-35",
     "name": "Settlement 35",
-    "ownerId": "JIN",
     "position": {
       "x": 991,
       "y": 2596
@@ -4470,12 +4378,12 @@
       "urban": 5,
       "rural": 1
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "JIN"
   },
   {
     "id": "settlement-52",
     "name": "Settlement 52",
-    "ownerId": null,
     "position": {
       "x": 1622,
       "y": 2486
@@ -4516,7 +4424,6 @@
   {
     "id": "settlement-53",
     "name": "Settlement 53",
-    "ownerId": null,
     "position": {
       "x": 1843,
       "y": 2523
@@ -4561,7 +4468,6 @@
   {
     "id": "settlement-65",
     "name": "Settlement 65",
-    "ownerId": null,
     "position": {
       "x": 2313,
       "y": 2516
@@ -4602,7 +4508,6 @@
   {
     "id": "settlement-64",
     "name": "Settlement 64",
-    "ownerId": null,
     "position": {
       "x": 2497,
       "y": 2515
@@ -4643,7 +4548,6 @@
   {
     "id": "settlement-143",
     "name": "Settlement 143",
-    "ownerId": null,
     "position": {
       "x": 3422,
       "y": 2495
@@ -4680,7 +4584,6 @@
   {
     "id": "settlement-41",
     "name": "Settlement 41",
-    "ownerId": null,
     "position": {
       "x": 3546,
       "y": 2573
@@ -4717,7 +4620,6 @@
   {
     "id": "settlement-58",
     "name": "Settlement 58",
-    "ownerId": "QII",
     "position": {
       "x": 2950,
       "y": 2598
@@ -4757,12 +4659,12 @@
       "urban": 5,
       "rural": 1
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "QII"
   },
   {
     "id": "settlement-54",
     "name": "Settlement 54",
-    "ownerId": null,
     "position": {
       "x": 2008,
       "y": 2598
@@ -4807,7 +4709,6 @@
   {
     "id": "settlement-42",
     "name": "Settlement 42",
-    "ownerId": null,
     "position": {
       "x": 3346,
       "y": 2622
@@ -4856,7 +4757,6 @@
   {
     "id": "settlement-33",
     "name": "Settlement 33",
-    "ownerId": null,
     "position": {
       "x": 724,
       "y": 2704
@@ -4897,7 +4797,6 @@
   {
     "id": "settlement-44",
     "name": "Settlement 44",
-    "ownerId": "QII",
     "position": {
       "x": 2699,
       "y": 2734
@@ -4945,12 +4844,12 @@
       "urban": 2,
       "rural": 6
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "QII"
   },
   {
     "id": "settlement-51",
     "name": "Settlement 51",
-    "ownerId": null,
     "position": {
       "x": 1681,
       "y": 2699
@@ -4991,7 +4890,6 @@
   {
     "id": "settlement-57",
     "name": "Settlement 57",
-    "ownerId": null,
     "position": {
       "x": 3141,
       "y": 2641
@@ -5028,7 +4926,6 @@
   {
     "id": "settlement-47",
     "name": "Settlement 47",
-    "ownerId": null,
     "position": {
       "x": 2231,
       "y": 2720
@@ -5077,7 +4974,6 @@
   {
     "id": "settlement-45",
     "name": "Settlement 45",
-    "ownerId": null,
     "position": {
       "x": 2422,
       "y": 2685
@@ -5122,7 +5018,6 @@
   {
     "id": "settlement-21",
     "name": "Settlement 21",
-    "ownerId": null,
     "position": {
       "x": 3809,
       "y": 2684
@@ -5147,7 +5042,6 @@
   {
     "id": "settlement-50",
     "name": "Settlement 50",
-    "ownerId": null,
     "position": {
       "x": 1918,
       "y": 2723
@@ -5188,7 +5082,6 @@
   {
     "id": "settlement-43",
     "name": "Settlement 43",
-    "ownerId": "QII",
     "position": {
       "x": 3148,
       "y": 2797
@@ -5236,12 +5129,12 @@
       "urban": 3,
       "rural": 1
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "QII"
   },
   {
     "id": "settlement-49",
     "name": "Settlement 49",
-    "ownerId": null,
     "position": {
       "x": 2034,
       "y": 2796
@@ -5282,7 +5175,6 @@
   {
     "id": "settlement-20",
     "name": "Settlement 20",
-    "ownerId": "QII",
     "position": {
       "x": 3598,
       "y": 2913
@@ -5322,12 +5214,12 @@
       "urban": 1,
       "rural": 2
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "QII"
   },
   {
     "id": "settlement-48",
     "name": "Settlement 48",
-    "ownerId": null,
     "position": {
       "x": 2115,
       "y": 2853
@@ -5364,7 +5256,6 @@
   {
     "id": "settlement-27",
     "name": "Settlement 27",
-    "ownerId": null,
     "position": {
       "x": 2454,
       "y": 3435
@@ -5429,7 +5320,6 @@
   {
     "id": "settlement-29",
     "name": "Settlement 29",
-    "ownerId": null,
     "position": {
       "x": 1748,
       "y": 3057
@@ -5490,7 +5380,6 @@
   {
     "id": "settlement-46",
     "name": "Settlement 46",
-    "ownerId": null,
     "position": {
       "x": 2272,
       "y": 2930
@@ -5535,7 +5424,6 @@
   {
     "id": "settlement-31",
     "name": "Settlement 31",
-    "ownerId": null,
     "position": {
       "x": 964,
       "y": 3075
@@ -5576,7 +5464,6 @@
   {
     "id": "settlement-144",
     "name": "Settlement 144",
-    "ownerId": null,
     "position": {
       "x": 2820,
       "y": 2927
@@ -5617,7 +5504,6 @@
   {
     "id": "settlement-24",
     "name": "Settlement 24",
-    "ownerId": "QII",
     "position": {
       "x": 3299,
       "y": 3057
@@ -5653,12 +5539,12 @@
       "urban": 4,
       "rural": 5
     },
-    "buildings": []
+    "buildings": [],
+    "ownerId": "QII"
   },
   {
     "id": "settlement-32",
     "name": "Settlement 32",
-    "ownerId": null,
     "position": {
       "x": 767,
       "y": 3132
@@ -5695,7 +5581,6 @@
   {
     "id": "settlement-40",
     "name": "Settlement 40",
-    "ownerId": null,
     "position": {
       "x": 3012,
       "y": 3039
@@ -5732,7 +5617,6 @@
   {
     "id": "settlement-141",
     "name": "Settlement 141",
-    "ownerId": null,
     "position": {
       "x": 3787,
       "y": 3392
@@ -5781,7 +5665,6 @@
   {
     "id": "settlement-145",
     "name": "Settlement 145",
-    "ownerId": null,
     "position": {
       "x": 2246,
       "y": 3131
@@ -5818,7 +5701,6 @@
   {
     "id": "settlement-25",
     "name": "Settlement 25",
-    "ownerId": null,
     "position": {
       "x": 3062,
       "y": 3385
@@ -5867,7 +5749,6 @@
   {
     "id": "settlement-18",
     "name": "Settlement 18",
-    "ownerId": null,
     "position": {
       "x": 1048,
       "y": 3484
@@ -5916,7 +5797,6 @@
   {
     "id": "settlement-19",
     "name": "Settlement 19",
-    "ownerId": null,
     "position": {
       "x": 3453,
       "y": 3367
@@ -5957,7 +5837,6 @@
   {
     "id": "settlement-28",
     "name": "Settlement 28",
-    "ownerId": null,
     "position": {
       "x": 2057,
       "y": 3484
@@ -5994,7 +5873,6 @@
   {
     "id": "settlement-26",
     "name": "Settlement 26",
-    "ownerId": null,
     "position": {
       "x": 2819,
       "y": 3549
@@ -6031,7 +5909,6 @@
   {
     "id": "settlement-13",
     "name": "Settlement 13",
-    "ownerId": null,
     "position": {
       "x": 1506,
       "y": 3731
@@ -6080,7 +5957,6 @@
   {
     "id": "settlement-17",
     "name": "Settlement 17",
-    "ownerId": null,
     "position": {
       "x": 3254,
       "y": 3773
@@ -6125,7 +6001,6 @@
   {
     "id": "settlement-12",
     "name": "Settlement 12",
-    "ownerId": null,
     "position": {
       "x": 519,
       "y": 3932
@@ -6158,7 +6033,6 @@
   {
     "id": "settlement-22",
     "name": "Settlement 22",
-    "ownerId": null,
     "position": {
       "x": 3866,
       "y": 3937
@@ -6191,7 +6065,6 @@
   {
     "id": "settlement-133",
     "name": "Settlement 133",
-    "ownerId": null,
     "position": {
       "x": 3555,
       "y": 3947
@@ -6228,7 +6101,6 @@
   {
     "id": "settlement-16",
     "name": "Settlement 16",
-    "ownerId": null,
     "position": {
       "x": 2845,
       "y": 3968
@@ -6269,7 +6141,6 @@
   {
     "id": "settlement-14",
     "name": "Settlement 14",
-    "ownerId": null,
     "position": {
       "x": 1569,
       "y": 4025
@@ -6298,7 +6169,6 @@
   {
     "id": "settlement-15",
     "name": "Settlement 15",
-    "ownerId": null,
     "position": {
       "x": 2159,
       "y": 4032

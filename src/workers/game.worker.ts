@@ -13,16 +13,19 @@ import { IdeaRegistry } from '../systems/IdeaRegistry'
 import { ModifierRegistry } from '../systems/ModifierRegistry'
 import type { Settlement, TerrainType } from '../types/Settlement'
 
-const inferLocalProduct = (terrain: TerrainType): ResourceId | null => {
+const inferLocalProduct = (terrain: TerrainType, settlementId?: string): ResourceId | null => {
+  // Simple hash for deterministic "randomness"
+  const hash = settlementId ? settlementId.split('').reduce((a, b) => a + b.charCodeAt(0), 0) : 0
+
   switch (terrain) {
     case 'forest':
       return 'logs'
     case 'plain':
-      return 'grain'
+      return (hash % 5 === 0) ? 'horses' : 'grain'
     case 'hills':
-      return 'wool'
+      return (hash % 3 === 0) ? 'horses' : 'wool'
     case 'mountains':
-      return 'iron'
+      return (hash % 4 === 0) ? 'copper' : 'iron'
     case 'water':
     case 'marsh':
       return 'fish'
@@ -69,7 +72,7 @@ const commandHandlers: { [K in Command['type']]?: CommandHandler<any> } = {
   LOAD_MAP: {
     execute: ({ dispatch }, { settlements, countries, armies, advisors }) => {
       const enriched: Settlement[] = (settlements || []).map((s: Settlement) => {
-        const lp = typeof s.localProduct === 'undefined' ? inferLocalProduct(s.terrain) : s.localProduct
+        const lp = typeof s.localProduct === 'undefined' ? inferLocalProduct(s.terrain, s.id) : s.localProduct
         return { ...s, localProduct: lp ?? null }
       })
       dispatch(setSettlements(enriched))

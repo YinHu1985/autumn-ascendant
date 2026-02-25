@@ -1,244 +1,263 @@
 [
   {
     "id": "jingtian",
-    "name": "井田制 (Well-field System)",
     "category": "production",
     "cost": 10,
     "modifierTarget": "production_food"
   },
   {
     "id": "tieli",
-    "name": "铁犁 (Iron Plow)",
     "category": "production",
     "cost": 20,
-    "prerequisites": ["jingtian"],
-    "modifierTarget": "production_food"
+    "modifierTarget": "production_food",
+    "prerequisites": [
+      "jingtian"
+    ]
   },
   {
     "id": "lunzuo",
-    "name": "轮作 (Crop Rotation)",
     "category": "production",
     "cost": 30,
-    "prerequisites": ["tieli"],
-    "modifierTarget": "production_food"
+    "modifierTarget": "production_food",
+    "prerequisites": [
+      "tieli"
+    ]
   },
   {
     "id": "shuili",
-    "name": "水利 (Irrigation)",
     "category": "production",
     "cost": 40,
-    "prerequisites": ["lunzuo"],
-    "modifierTarget": "production_food"
+    "modifierTarget": "production_food",
+    "prerequisites": [
+      "lunzuo"
+    ]
   },
   {
     "id": "dujiangyan",
-    "name": "都江堰 (Dujiangyan)",
     "category": "production",
     "cost": 100,
-    "prerequisites": ["shuili"],
-    "modifierTarget": "production_food"
+    "modifierTarget": "production_food",
+    "prerequisites": [
+      "shuili"
+    ]
   },
   {
     "id": "zhengguoqu",
-    "name": "郑国渠 (Zheng Guo Canal)",
     "category": "production",
     "cost": 120,
-    "prerequisites": ["shuili"],
-    "modifierTarget": "production_food"
+    "modifierTarget": "production_food",
+    "prerequisites": [
+      "shuili"
+    ]
   },
   {
     "id": "kanerjing",
-    "name": "坎儿井 (Karen Well)",
     "category": "production",
     "cost": 80,
-    "prerequisites": ["shuili"],
-    "modifierTarget": "production_food"
+    "modifierTarget": "production_food",
+    "prerequisites": [
+      "shuili"
+    ]
   },
   {
     "id": "tongche",
-    "name": "筒车 (Water Wheel)",
     "category": "production",
     "cost": 50,
-    "prerequisites": ["shuili"],
-    "modifierTarget": "production_food"
+    "modifierTarget": "production_food",
+    "prerequisites": [
+      "shuili"
+    ]
   },
   {
     "id": "fanche",
-    "name": "翻车 (Chain Pump)",
     "category": "production",
     "cost": 60,
-    "prerequisites": ["tongche"],
-    "modifierTarget": "production_food"
+    "modifierTarget": "production_food",
+    "prerequisites": [
+      "tongche"
+    ]
   },
   {
     "id": "longgushuiche",
-    "name": "龙骨水车 (Keel Water Wheel)",
     "category": "production",
     "cost": 70,
-    "prerequisites": ["fanche"],
-    "modifierTarget": "production_food"
+    "modifierTarget": "production_food",
+    "prerequisites": [
+      "fanche"
+    ]
   },
   {
     "id": "yetie",
-    "name": "冶铁 (Iron Smelting)",
     "category": "production",
     "cost": 50,
-    "prerequisites": ["tieli"],
-    "modifierTarget": "production_metal"
+    "modifierTarget": "production_metal",
+    "prerequisites": [
+      "tieli"
+    ]
   },
   {
     "id": "guangangfa",
-    "name": "灌钢法 (Co-fusion Steel)",
     "category": "production",
     "cost": 150,
-    "prerequisites": ["yetie"],
-    "modifierTarget": "production_metal"
+    "modifierTarget": "production_metal",
+    "prerequisites": [
+      "yetie"
+    ]
   },
   {
     "id": "chaogang",
-    "name": "炒钢 (Puddling)",
     "category": "production",
     "cost": 120,
-    "prerequisites": ["yetie"],
-    "modifierTarget": "production_metal"
+    "modifierTarget": "production_metal",
+    "prerequisites": [
+      "yetie"
+    ]
   },
   {
     "id": "cuihuo",
-    "name": "淬火 (Quenching)",
     "category": "production",
     "cost": 80,
-    "prerequisites": ["yetie"],
-    "modifierTarget": "production_metal"
+    "modifierTarget": "production_metal",
+    "prerequisites": [
+      "yetie"
+    ]
   },
   {
     "id": "gufengji",
-    "name": "鼓风机 (Bellows)",
     "category": "production",
     "cost": 60,
-    "prerequisites": ["yetie"],
-    "modifierTarget": "production_metal"
+    "modifierTarget": "production_metal",
+    "prerequisites": [
+      "yetie"
+    ]
   },
   {
     "id": "shuipai",
-    "name": "水排 (Water-powered Bellows)",
     "category": "production",
     "cost": 100,
-    "prerequisites": ["gufengji"],
-    "modifierTarget": "production_metal"
+    "modifierTarget": "production_metal",
+    "prerequisites": [
+      "gufengji"
+    ]
   },
   {
     "id": "shichou",
-    "name": "丝绸 (Silk)",
     "category": "production",
     "cost": 30,
     "modifierTarget": "production_gold"
   },
   {
     "id": "fangche",
-    "name": "纺车 (Spinning Wheel)",
     "category": "production",
     "cost": 40,
-    "prerequisites": ["shichou"],
-    "modifierTarget": "production_gold"
+    "modifierTarget": "production_gold",
+    "prerequisites": [
+      "shichou"
+    ]
   },
   {
     "id": "tihuaji",
-    "name": "提花机 (Jacquard Loom)",
     "category": "production",
     "cost": 80,
-    "prerequisites": ["fangche"],
-    "modifierTarget": "production_gold"
+    "modifierTarget": "production_gold",
+    "prerequisites": [
+      "fangche"
+    ]
   },
   {
     "id": "ciqi",
-    "name": "瓷器 (Porcelain)",
     "category": "production",
     "cost": 50,
     "modifierTarget": "production_gold"
   },
   {
     "id": "qingci",
-    "name": "青瓷 (Celadon)",
     "category": "production",
     "cost": 70,
-    "prerequisites": ["ciqi"],
-    "modifierTarget": "production_gold"
+    "modifierTarget": "production_gold",
+    "prerequisites": [
+      "ciqi"
+    ]
   },
   {
     "id": "baici",
-    "name": "白瓷 (White Porcelain)",
     "category": "production",
     "cost": 90,
-    "prerequisites": ["qingci"],
-    "modifierTarget": "production_gold"
+    "modifierTarget": "production_gold",
+    "prerequisites": [
+      "qingci"
+    ]
   },
   {
     "id": "zaozhi",
-    "name": "造纸术 (Papermaking)",
     "category": "production",
     "cost": 200,
     "modifierTarget": "production_gold"
   },
   {
     "id": "yinshua",
-    "name": "印刷术 (Printing)",
     "category": "production",
     "cost": 300,
-    "prerequisites": ["zaozhi"],
-    "modifierTarget": "production_gold"
+    "modifierTarget": "production_gold",
+    "prerequisites": [
+      "zaozhi"
+    ]
   },
   {
     "id": "bubing",
-    "name": "步兵 (Infantry)",
     "category": "military",
     "cost": 10,
     "modifierTarget": "army_defense"
   },
   {
     "id": "fangzhen",
-    "name": "方阵 (Phalanx)",
     "category": "military",
     "cost": 20,
-    "prerequisites": ["bubing"],
-    "modifierTarget": "army_defense"
+    "modifierTarget": "army_defense",
+    "prerequisites": [
+      "bubing"
+    ]
   },
   {
     "id": "weiwuzu",
-    "name": "魏武卒 (Wei Wu Soldiers)",
     "category": "military",
     "cost": 50,
-    "prerequisites": ["fangzhen"],
-    "modifierTarget": "army_attack"
+    "modifierTarget": "army_attack",
+    "prerequisites": [
+      "fangzhen"
+    ]
   },
   {
     "id": "qinruishi",
-    "name": "秦锐士 (Qin Sharp Soldiers)",
     "category": "military",
     "cost": 60,
-    "prerequisites": ["fangzhen"],
-    "modifierTarget": "army_attack"
+    "modifierTarget": "army_attack",
+    "prerequisites": [
+      "fangzhen"
+    ]
   },
   {
     "id": "gongjian",
-    "name": "弓箭 (Archery)",
     "category": "military",
     "cost": 15,
     "modifierTarget": "army_attack"
   },
   {
     "id": "fugong",
-    "name": "复合弓 (Composite Bow)",
     "category": "military",
     "cost": 30,
-    "prerequisites": ["gongjian"],
-    "modifierTarget": "army_attack"
+    "modifierTarget": "army_attack",
+    "prerequisites": [
+      "gongjian"
+    ]
   },
   {
     "id": "nu",
-    "name": "弩 (Crossbow)",
     "category": "military",
     "cost": 40,
-    "prerequisites": ["fugong"],
-    "modifierTarget": "army_attack"
+    "modifierTarget": "army_attack",
+    "prerequisites": [
+      "fugong"
+    ]
   }
 ]

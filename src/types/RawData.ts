@@ -5,7 +5,8 @@ import { School } from './Country'
 // Relaxed format for JSON input
 export interface RawTechnology {
   id: string
-  name: string
+  name?: string
+  description?: string
   category: TechCategory
   cost?: number
   prerequisites?: string[]
@@ -16,7 +17,8 @@ export interface RawTechnology {
 
 export interface RawIdea {
   id: string
-  name: string
+  name?: string
+  description?: string
   school: School
   cost: number
   prerequisites?: string[]
@@ -43,18 +45,18 @@ export interface RawEvent {
 
 export interface RawAdvisor {
   id: string
-  name: string
+  name?: string
   level: number
   specialAbilities: string[]
-  biography: string
+  biography?: string
   portrait: string
 }
 
 export interface RawBuilding {
   id: string
-  name: string
+  name?: string
   description?: string
-  cost: { gold: number, metal?: number, food?: number }
+  cost: Record<string, number>
   modifiers?: Array<{
     id: string
     name: string

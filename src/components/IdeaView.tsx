@@ -110,7 +110,7 @@ export default function IdeaView({ onClose }: IdeaViewProps) {
                     {t('idea.slot')} {index + 1}
                   </span>
                   <span className="text-[11px] text-antique-dark">
-                    {idea ? idea.name : t('idea.empty')}
+                    {idea ? t(idea.name) : t('idea.empty')}
                   </span>
                   {idea && (
                     <button
@@ -170,7 +170,7 @@ export default function IdeaView({ onClose }: IdeaViewProps) {
                   `}>
                     <div>
                       <div className="flex justify-between items-start mb-2">
-                        <h3 className="font-bold text-lg text-antique-dark leading-tight">{idea.name}</h3>
+                        <h3 className="font-bold text-lg text-antique-dark leading-tight">{t(idea.name)}</h3>
                         <span className={`text-xs px-2 py-1 rounded-sm font-bold uppercase border whitespace-nowrap
                           ${status === 'adopted' ? 'bg-antique-green text-antique-white border-antique-green' : ''}
                           ${status === 'available' ? 'bg-antique-gold text-antique-dark border-antique-gold' : ''}
@@ -179,7 +179,7 @@ export default function IdeaView({ onClose }: IdeaViewProps) {
                           {t(`idea.${status}`)}
                         </span>
                       </div>
-                      <p className="text-xs text-gray-600 mb-2 italic">{idea.description}</p>
+                      <p className="text-xs text-gray-600 mb-2 italic">{t(idea.description)}</p>
                       
                       {status !== 'adopted' && (
                         <div className="text-sm text-antique-wood mb-2 font-serif">

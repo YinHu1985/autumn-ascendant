@@ -1,222 +1,242 @@
 [
   {
     "id": "ren",
-    "name": "仁 (Ren - Benevolence)",
     "school": "confucianism",
     "cost": 100,
     "modifierTarget": "stability"
   },
   {
     "id": "yi",
-    "name": "义 (Yi - Righteousness)",
     "school": "confucianism",
     "cost": 120,
-    "prerequisites": ["ren"],
-    "modifierTarget": "stability"
+    "modifierTarget": "stability",
+    "prerequisites": [
+      "ren"
+    ]
   },
   {
     "id": "li",
-    "name": "礼 (Li - Rites)",
     "school": "confucianism",
     "cost": 150,
-    "prerequisites": ["ren"],
-    "modifierTarget": "stability"
+    "modifierTarget": "stability",
+    "prerequisites": [
+      "ren"
+    ]
   },
   {
     "id": "zhi",
-    "name": "智 (Zhi - Wisdom)",
     "school": "confucianism",
     "cost": 180,
-    "prerequisites": ["li"],
-    "modifierTarget": "production_gold"
+    "modifierTarget": "production_gold",
+    "prerequisites": [
+      "li"
+    ]
   },
   {
     "id": "xin",
-    "name": "信 (Xin - Integrity)",
     "school": "confucianism",
     "cost": 200,
-    "prerequisites": ["yi"],
-    "modifierTarget": "stability"
+    "modifierTarget": "stability",
+    "prerequisites": [
+      "yi"
+    ]
   },
   {
     "id": "zhong",
-    "name": "忠 (Zhong - Loyalty)",
     "school": "confucianism",
     "cost": 250,
-    "prerequisites": ["xin"],
-    "modifierTarget": "stability"
+    "modifierTarget": "stability",
+    "prerequisites": [
+      "xin"
+    ]
   },
   {
     "id": "xiao",
-    "name": "孝 (Xiao - Filial Piety)",
     "school": "confucianism",
     "cost": 300,
-    "prerequisites": ["zhong"],
-    "modifierTarget": "stability"
+    "modifierTarget": "stability",
+    "prerequisites": [
+      "zhong"
+    ]
   },
   {
     "id": "zhongyong",
-    "name": "中庸 (Zhongyong - Doctrine of the Mean)",
     "school": "confucianism",
     "cost": 400,
-    "prerequisites": ["zhi"],
-    "modifierTarget": "stability"
+    "modifierTarget": "stability",
+    "prerequisites": [
+      "zhi"
+    ]
   },
   {
     "id": "dezhi",
-    "name": "德治 (Rule of Virtue)",
     "school": "confucianism",
     "cost": 500,
-    "prerequisites": ["ren"],
-    "modifierTarget": "stability"
+    "modifierTarget": "stability",
+    "prerequisites": [
+      "ren"
+    ]
   },
   {
     "id": "wangdao",
-    "name": "王道 (Kingly Way)",
     "school": "confucianism",
     "cost": 800,
-    "prerequisites": ["dezhi"],
-    "modifierTarget": "stability"
+    "modifierTarget": "stability",
+    "prerequisites": [
+      "dezhi"
+    ]
   },
   {
     "id": "fa",
-    "name": "法 (Fa - Law)",
     "school": "legalism",
     "cost": 100,
     "modifierTarget": "authority"
   },
   {
     "id": "shu",
-    "name": "术 (Shu - Methodology)",
     "school": "legalism",
     "cost": 150,
-    "prerequisites": ["fa"],
-    "modifierTarget": "authority"
+    "modifierTarget": "authority",
+    "prerequisites": [
+      "fa"
+    ]
   },
   {
     "id": "shi",
-    "name": "势 (Shi - Power)",
     "school": "legalism",
     "cost": 200,
-    "prerequisites": ["fa"],
-    "modifierTarget": "authority"
+    "modifierTarget": "authority",
+    "prerequisites": [
+      "fa"
+    ]
   },
   {
     "id": "fazhi",
-    "name": "法治 (Rule of Law)",
     "school": "legalism",
     "cost": 300,
-    "prerequisites": ["fa"],
-    "modifierTarget": "authority"
+    "modifierTarget": "authority",
+    "prerequisites": [
+      "fa"
+    ]
   },
   {
     "id": "yanxing",
-    "name": "严刑 (Severe Punishment)",
     "school": "legalism",
     "cost": 400,
-    "prerequisites": ["fazhi"],
-    "modifierTarget": "revolt_risk"
+    "modifierTarget": "revolt_risk",
+    "prerequisites": [
+      "fazhi"
+    ]
   },
   {
     "id": "junfa",
-    "name": "峻法 (Strict Laws)",
     "school": "legalism",
     "cost": 500,
-    "prerequisites": ["yanxing"],
-    "modifierTarget": "authority"
+    "modifierTarget": "authority",
+    "prerequisites": [
+      "yanxing"
+    ]
   },
   {
     "id": "lianzuo",
-    "name": "连坐 (Collective Punishment)",
     "school": "legalism",
     "cost": 600,
-    "prerequisites": ["junfa"],
-    "modifierTarget": "revolt_risk"
+    "modifierTarget": "revolt_risk",
+    "prerequisites": [
+      "junfa"
+    ]
   },
   {
     "id": "gengzhan",
-    "name": "耕战 (Farming and War)",
     "school": "legalism",
     "cost": 800,
-    "prerequisites": ["fa"],
-    "modifierTarget": "production_food"
+    "modifierTarget": "production_food",
+    "prerequisites": [
+      "fa"
+    ]
   },
   {
     "id": "jianai",
-    "name": "兼爱 (Universal Love)",
     "school": "mohism",
     "cost": 100,
     "modifierTarget": "defense"
   },
   {
     "id": "feigong",
-    "name": "非攻 (Non-aggression)",
     "school": "mohism",
     "cost": 150,
-    "prerequisites": ["jianai"],
-    "modifierTarget": "defense"
+    "modifierTarget": "defense",
+    "prerequisites": [
+      "jianai"
+    ]
   },
   {
     "id": "jieyong",
-    "name": "节用 (Frugality)",
     "school": "mohism",
     "cost": 200,
-    "prerequisites": ["jianai"],
-    "modifierTarget": "production_gold"
+    "modifierTarget": "production_gold",
+    "prerequisites": [
+      "jianai"
+    ]
   },
   {
     "id": "jiezang",
-    "name": "节葬 (Simplicity in Funerals)",
     "school": "mohism",
     "cost": 250,
-    "prerequisites": ["jieyong"],
-    "modifierTarget": "production_gold"
+    "modifierTarget": "production_gold",
+    "prerequisites": [
+      "jieyong"
+    ]
   },
   {
     "id": "shangxian",
-    "name": "尚贤 (Exalting the Virtuous)",
     "school": "mohism",
     "cost": 300,
-    "prerequisites": ["jianai"],
-    "modifierTarget": "production_gold"
+    "modifierTarget": "production_gold",
+    "prerequisites": [
+      "jianai"
+    ]
   },
   {
     "id": "shangtong",
-    "name": "尚同 (Identifying with Superior)",
     "school": "mohism",
     "cost": 400,
-    "prerequisites": ["shangxian"],
-    "modifierTarget": "stability"
+    "modifierTarget": "stability",
+    "prerequisites": [
+      "shangxian"
+    ]
   },
   {
     "id": "feiming",
-    "name": "非命 (Against Fate)",
     "school": "mohism",
     "cost": 500,
-    "prerequisites": ["jianai"],
-    "modifierTarget": "morale"
+    "modifierTarget": "morale",
+    "prerequisites": [
+      "jianai"
+    ]
   },
   {
     "id": "feile",
-    "name": "非乐 (Condemnation of Music)",
     "school": "mohism",
     "cost": 600,
-    "prerequisites": ["jieyong"],
-    "modifierTarget": "production_gold"
+    "modifierTarget": "production_gold",
+    "prerequisites": [
+      "jieyong"
+    ]
   },
   {
     "id": "dao",
-    "name": "道 (Dao)",
     "school": "taoism",
     "cost": 100,
     "modifierTarget": "happiness"
   },
   {
     "id": "wuwei",
-    "name": "无为 (Wu Wei)",
     "school": "taoism",
     "cost": 200,
-    "prerequisites": ["dao"],
-    "modifierTarget": "happiness"
+    "modifierTarget": "happiness",
+    "prerequisites": [
+      "dao"
+    ]
   }
 ]

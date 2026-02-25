@@ -48,8 +48,8 @@ const createTech = (raw: RawTechnology): Technology => {
 
   return {
     id: techId,
-    name: raw.name,
-    description: `${raw.name} technology.`,
+    name: raw.name || `tech.${raw.id}.name`,
+    description: raw.description || `tech.${raw.id}.desc`,
     category: raw.category,
     cost: raw.category === 'production' ? { engineering_practice: costVal } : 
           raw.category === 'military' ? { military_practice: costVal } : 
@@ -57,7 +57,7 @@ const createTech = (raw: RawTechnology): Technology => {
     condition, 
     rewardModifiers: [{
       id: `mod_${raw.id}`,
-      name: `${raw.name} Bonus`,
+      name: `${raw.name || `tech.${raw.id}.name`} Bonus`,
       targetAttribute: modifierTarget,
       operator: 'add_percent',
       value: 0.01

@@ -6,6 +6,7 @@ import { IdeaRegistry } from '../systems/IdeaRegistry'
 import GameController from '../controllers/GameController'
 import { School, SCHOOLS } from '../types/Country'
 import { checkCommandAllowed } from '../systems/CommandRules'
+import { extractIdeaRequirements } from '../utils/ConditionUtils'
 import type { GameState } from '../store/gameState'
 
 interface IdeaViewProps {
@@ -188,9 +189,9 @@ export default function IdeaView({ onClose }: IdeaViewProps) {
                       )}
                       
                       {/* Prereqs */}
-                      {idea.prerequisites.length > 0 && (
+                      {extractIdeaRequirements(idea.condition).length > 0 && (
                          <div className="text-xs text-gray-500 mt-1">
-                           Req: {idea.prerequisites.map(p => registry.getIdea(p)?.name).join(', ')}
+                           Req: {extractIdeaRequirements(idea.condition).map(p => registry.getIdea(p)?.name).join(', ')}
                          </div>
                       )}
                     </div>

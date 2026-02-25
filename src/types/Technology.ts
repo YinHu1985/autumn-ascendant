@@ -1,4 +1,5 @@
 import { Modifier } from './Modifier'
+import { Condition } from '../systems/ConditionSystem'
 
 export type TechCategory = 'production' | 'military' | 'secret'
 
@@ -15,6 +16,8 @@ export interface Technology {
     engineering_practice?: number
     military_practice?: number
   }
-  prerequisites: string[] // List of Tech IDs
+  prerequisites?: never // Removed from interface, use condition instead
+  excludes?: never // Removed from interface, use condition instead
+  condition?: Condition
   rewardModifiers: Modifier[]
 }

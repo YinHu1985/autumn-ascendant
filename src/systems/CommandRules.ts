@@ -1,10 +1,12 @@
 import type { GameState } from '../store/gameState'
 import type { Command } from '../types/Command'
 import { TechRegistry } from './TechRegistry'
+import { extractIdeaRequirements } from '../utils/ConditionUtils'
 import { IdeaRegistry } from './IdeaRegistry'
 import { BuildingRegistry } from './BuildingRegistry'
 import { EventManager } from './EventManager'
-import { RESOURCE_BASE_PRICE } from '../types/Country'
+import { ConditionSystem } from './ConditionSystem'
+import { RESOURCE_BASE_PRICE, ResourceId } from '../types/Country'
 
 export interface CommandCheckResult {
   allowed: boolean
@@ -29,10 +31,28 @@ export function checkCommandAllowed(state: GameState, command: Command): Command
       if (country.researchedTechs.includes(techId)) {
         reasons.push('Tech already researched')
       }
-      const hasPrereqs = tech.prerequisites.every(id => country.researchedTechs.includes(id))
-      if (!hasPrereqs) {
-        reasons.push('Prerequisites not met')
+      
+      // Use condition system for prerequisites and excludes
+      if (tech.condition) {
+        const context = {
+          ROOT: state,
+          ACTOR: country
+        }
+        if (!ConditionSystem.checkCondition(tech.condition, context)) {
+          // If condition fails, we can try to be more specific if we want,
+          // but "Requirements not met" or "Prerequisites not met" is fine.
+          // Since we mapped prereqs to condition, this covers it.
+          reasons.push('Requirements not met')
+        }
       }
+
+      // Check legacy prerequisites array just in case some techs are manually defined without condition?
+      // User said "no longer use the prerequisites for techs", but "keep parameter for UI".
+      // So logic should rely on condition.
+      // If tech has prerequisites but NO condition (e.g. old data), we might want to fallback?
+      // But we updated the factory to generate condition.
+      // Let's assume all valid techs have condition generated if they have prereqs.
+      
       const cost = tech.cost
       if (
         (cost.gold && country.resources.cash < cost.gold) ||
@@ -63,10 +83,18 @@ export function checkCommandAllowed(state: GameState, command: Command): Command
       if (country.unlockedIdeas && country.unlockedIdeas.length > 0 && !country.unlockedIdeas.includes(ideaId)) {
         reasons.push('Idea not unlocked')
       }
-      const prereqsMet = idea.prerequisites.every(id => country.adoptedIdeas?.includes(id))
-      if (!prereqsMet) {
-        reasons.push('Prerequisites not met')
+      // Use condition for ideas
+      if (idea.condition) {
+        const context = {
+          ROOT: state,
+          ACTOR: country
+        }
+        if (!ConditionSystem.checkCondition(idea.condition, context)) {
+          reasons.push('Requirements not met')
+        }
       }
+      // Legacy fallback if no condition but prerequisites exist?
+      // Assuming ideas are updated to use condition factory too.
       const school = idea.school
       const currentTradition = country.resources.tradition?.[school] || 0
       if (currentTradition < idea.cost) {
@@ -227,7 +255,7 @@ export function checkCommandAllowed(state: GameState, command: Command): Command
       if (equippedIds.includes(ideaId)) {
         reasons.push('Idea already equipped')
       }
-      const prereqsMet = idea.prerequisites.every(id => equippedIds.includes(id))
+      const prereqsMet = extractIdeaRequirements(idea.condition).every(id => equippedIds.includes(id))
       if (!prereqsMet) {
         reasons.push('Prerequisites not equipped')
       }
@@ -264,7 +292,7 @@ export function checkCommandAllowed(state: GameState, command: Command): Command
       for (const id of equippedIds) {
         if (id === ideaId) continue
         const idea = registry.getIdea(id)
-        if (idea && idea.prerequisites.includes(ideaId)) {
+        if (idea && extractIdeaRequirements(idea.condition).includes(ideaId)) {
           blockedBy.push(id)
         }
       }
@@ -311,12 +339,12 @@ export function checkCommandAllowed(state: GameState, command: Command): Command
       if (!country) {
         return { allowed: false, hardBlock: true, reasons: ['Country not found'] }
       }
-      const basePrice = RESOURCE_BASE_PRICE[resourceId as keyof typeof RESOURCE_BASE_PRICE]
+      const basePrice = RESOURCE_BASE_PRICE[resourceId as ResourceId]
       if (!basePrice) {
         return { allowed: false, hardBlock: true, reasons: ['Resource not tradeable'] }
       }
       const reasonsLocal: string[] = []
-      const currentStock = country.resources.stockpile[resourceId]
+      const currentStock = country.resources.stockpile[resourceId as ResourceId]
       if (quantity > 0) {
         const cost = basePrice * quantity
         if (country.resources.cash < cost) {

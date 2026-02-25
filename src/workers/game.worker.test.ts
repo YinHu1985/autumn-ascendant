@@ -21,7 +21,7 @@ describe('game.worker event integration', () => {
 
     const settlements: Settlement[] = [
       {
-        id: 'S1',
+        id: 'settlement-1',
         name: 'Frontier',
         ownerId: null as any,
         position: { x: 0, y: 0 },
@@ -61,13 +61,14 @@ describe('game.worker event integration', () => {
         })
         if (currentId === 'evt_new_nation_rise') {
           const after = store.getState().gameState
-          const settlement = after.settlements.find(s => s.id === context.settlementId)
+          const targetSettlementId = 'settlement-1'
+          const settlement = after.settlements.find(s => s.id === targetSettlementId)
           expect(settlement).toBeTruthy()
           const ownerId = settlement?.ownerId
           expect(ownerId).toBeTruthy()
           const country = ownerId ? after.countries[ownerId] : undefined
           expect(country).toBeTruthy()
-          expect(country?.capitalId).toBe(context.settlementId)
+          expect(country?.capitalId).toBe(targetSettlementId)
           spawned = true
         } else {
           handleCommand({

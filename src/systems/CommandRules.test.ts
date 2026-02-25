@@ -25,6 +25,7 @@ function makeEmptyGameState(): GameState {
     playerCountryId: 'QII',
     firedEvents: {},
     activeEventContext: null,
+    randomSeed: 12345,
   }
 }
 
@@ -72,7 +73,6 @@ describe('CommandRules - RESEARCH_TECH', () => {
       description: '',
       category: 'production',
       cost: { gold: 10 },
-      prerequisites: [],
       rewardModifiers: [],
     }
     techRegistry.registerTech(tech)
@@ -107,7 +107,12 @@ describe('CommandRules - RESEARCH_TECH', () => {
       description: '',
       category: 'production',
       cost: { gold: 50 },
-      prerequisites: ['tech_missing'],
+      condition: {
+        scope: 'ACTOR',
+        path: 'researchedTechs',
+        op: 'contains',
+        value: 'tech_missing'
+      },
       rewardModifiers: [],
     }
     techRegistry.registerTech(tech)
@@ -130,8 +135,9 @@ describe('CommandRules - RESEARCH_TECH', () => {
 
     expect(result.hardBlock).toBe(false)
     expect(result.allowed).toBe(false)
+    // Updated expectation: "Prerequisites not met" is replaced by "Requirements not met"
     expect(result.reasons).toEqual(
-      expect.arrayContaining(['Prerequisites not met', 'Insufficient resources'])
+      expect.arrayContaining(['Requirements not met', 'Insufficient resources'])
     )
   })
 })
@@ -146,7 +152,6 @@ describe('CommandRules - ADOPT_IDEA / EQUIP_IDEA_SLOT', () => {
       description: '',
       school: 'confucianism',
       cost: 10,
-      prerequisites: [],
       rewardModifiers: [],
     }
     ideaRegistry.registerIdea(idea)
@@ -182,7 +187,6 @@ describe('CommandRules - ADOPT_IDEA / EQUIP_IDEA_SLOT', () => {
       description: '',
       school: 'confucianism',
       cost: 5,
-      prerequisites: [],
       rewardModifiers: [],
     }
     ideaRegistry.registerIdea(idea)
@@ -219,7 +223,6 @@ describe('CommandRules - ADOPT_IDEA / EQUIP_IDEA_SLOT', () => {
       description: '',
       school: 'confucianism',
       cost: 0,
-      prerequisites: [],
       rewardModifiers: [],
     }
     const childIdea: Idea = {
@@ -228,7 +231,12 @@ describe('CommandRules - ADOPT_IDEA / EQUIP_IDEA_SLOT', () => {
       description: '',
       school: 'confucianism',
       cost: 0,
-      prerequisites: ['idea_base'],
+      condition: {
+        scope: 'ACTOR',
+        path: 'adoptedIdeas',
+        op: 'contains',
+        value: 'idea_base'
+      },
       rewardModifiers: [],
     }
     ideaRegistry.registerIdea(baseIdea)

@@ -1,5 +1,5 @@
 import { Building } from '../types/Building'
-import { buildings } from '../data/BuildingDefinitions'
+import { buildings } from '../content/BuildingLoader'
 
 export class BuildingRegistry {
   private static instance: BuildingRegistry

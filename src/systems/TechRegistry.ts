@@ -1,5 +1,5 @@
 import { Technology } from '../types/Technology'
-import { allTechs } from '../data/TechDefinitions'
+import { allTechs } from '../content/TechLoader'
 
 export class TechRegistry {
   private static instance: TechRegistry

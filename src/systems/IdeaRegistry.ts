@@ -1,5 +1,5 @@
 import { Idea } from '../types/Idea'
-import { ideas } from '../data/IdeaDefinitions'
+import { ideas } from '../content/IdeaLoader'
 
 export class IdeaRegistry {
   private static instance: IdeaRegistry

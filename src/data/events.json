@@ -1,0 +1,41 @@
+[
+  {
+    "id": "evt_welcome",
+    "title": "A New Era",
+    "description": "The year is 1000. Your reign begins. The people await your command.",
+    "options": [
+      {
+        "text": "Let us prosper.",
+        "effectCommand": { "type": "NOOP", "payload": {} } 
+      }
+    ],
+    "condition": {
+      "AND": [
+        { "scope": "ROOT", "path": "date.year", "op": "eq", "value": 1000 },
+        { "scope": "ROOT", "path": "date.month", "op": "eq", "value": 1 },
+        { "scope": "ROOT", "path": "date.day", "op": "eq", "value": 5 }
+      ]
+    }
+  },
+  {
+    "id": "evt_new_nation_rise",
+    "title": "Rise of a New Power",
+    "description": "A local warlord in Settlement 1 has declared independence and established a new state!",
+    "maxFires": 1,
+    "condition": {
+      "scope": "ROOT",
+      "path": "date.day",
+      "op": "eq",
+      "value": 2
+    },
+    "options": [
+      {
+        "text": "Acknowledge them.",
+        "effectCommand": { 
+          "type": "SPAWN_COUNTRY", 
+          "payload": { "settlementId": "settlement-1", "tag": "new_nation", "name": "New Nation" } 
+        }
+      }
+    ]
+  }
+]

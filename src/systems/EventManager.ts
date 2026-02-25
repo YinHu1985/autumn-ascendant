@@ -1,5 +1,6 @@
 import { GameEvent } from '../types/GameEvent'
 import { GameState } from '../store/gameState'
+import { ConditionSystem } from './ConditionSystem'
 
 export class EventManager {
   private static instance: EventManager
@@ -18,6 +19,10 @@ export class EventManager {
     this.events.push(event)
   }
 
+  registerEvents(events: GameEvent[]) {
+    this.events.push(...events)
+  }
+
   getEventById(id: string): GameEvent | undefined {
     return this.events.find(e => e.id === id)
   }
@@ -33,88 +38,44 @@ export class EventManager {
         continue
       }
 
-      const result = event.triggerCondition(state)
-      if (typeof result === 'boolean') {
-        if (result) return { event, context: null }
-      } else {
-        if (result.triggered) {
-          return { event, context: result.context }
+      // Check condition (JSON logic)
+      if (event.condition) {
+        // Default context: just root for now, maybe event itself as 'from'?
+        // For triggers, we usually check against global state (root)
+        // If we need specific actor context (e.g. per-country events), we'd need to loop over countries?
+        // But checkTriggers currently takes just `state`.
+        // So `condition` here is strictly global check unless we iterate.
+        // Existing `triggerCondition` also just takes `state`.
+        const context = { ROOT: state }
+        if (!ConditionSystem.checkCondition(event.condition, context)) {
+          continue
         }
+      }
+
+      // Check triggerCondition if exists
+      if (event.triggerCondition) {
+        const result = event.triggerCondition(state)
+        if (typeof result === 'boolean') {
+          if (result) return { event, context: null }
+        } else {
+          if (result.triggered) {
+            return { event, context: result.context }
+          }
+        }
+      } else if (event.condition) {
+        // If no triggerCondition but condition passed (checked above)
+        return { event, context: null }
       }
     }
     return null
   }
 }
 
+import { coreEvents } from '../content/EventLoader'
+
 // Example Event Registration
 // Ideally this happens at app startup
 export function registerCoreEvents() {
   const manager = EventManager.getInstance()
-
-  // Test Event: Day 5 Welcome
-  manager.registerEvent({
-    id: 'evt_welcome',
-    title: 'A New Era',
-    description: 'The year is 1000. Your reign begins. The people await your command.',
-    options: [
-      {
-        text: 'Let us prosper.',
-        effect: (dispatch) => {
-          console.log('Event Effect: Welcome confirmed')
-        }
-      }
-    ],
-    triggerCondition: (state) => {
-      // Trigger exactly on Day 5
-      return state.date.year === 1000 && state.date.month === 1 && state.date.day === 5
-    }
-  })
-
-  // New Nation Event
-  manager.registerEvent({
-    id: 'evt_new_nation_rise',
-    title: 'Rise of a New Power',
-    description: 'A local warlord in {settlement_name} has declared independence and established a new state!',
-    maxFires: 1,
-    triggerCondition: (state) => {
-        // Random chance check (e.g. 1% daily chance, or check once a month)
-        // For testing, let's make it trigger on Day 10 if not triggered
-        if (state.date.day !== 10) return false
-
-        // Find candidate settlements:
-        // 1. Ownerless (ownerId === null)
-        const candidates = state.settlements.filter(s => s.ownerId === null)
-        
-        if (candidates.length === 0) return false
-
-        // Pick one randomly
-        const target = candidates[Math.floor(Math.random() * candidates.length)]
-        
-        console.log(`[EventManager] Triggering New Nation Event at ${target.name} (${target.id})`)
-
-        return {
-            triggered: true,
-            context: {
-                settlementId: target.id,
-                settlement_name: target.name
-            }
-        }
-    },
-    options: [
-        {
-            text: 'Interesting times ahead.',
-            effect: (dispatch, state, context) => {
-                if (context && context.settlementId) {
-                    dispatch({
-                        type: 'SPAWN_COUNTRY',
-                        payload: {
-                            settlementId: context.settlementId,
-                            tag: null // Auto-generate unused tag
-                        }
-                    })
-                }
-            }
-        }
-    ]
-  })
+  manager.registerEvents(coreEvents)
 }

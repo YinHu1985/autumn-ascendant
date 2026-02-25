@@ -10,6 +10,7 @@ import { IdeaRegistry } from '../systems/IdeaRegistry'
 import { BuildingRegistry } from '../systems/BuildingRegistry'
 import { ModifierRegistry } from '../systems/ModifierRegistry'
 import { EventManager } from '../systems/EventManager'
+import { ConditionSystem } from '../systems/ConditionSystem'
 import type { BattleState } from '../types/Battle'
 import { Advisor } from '../types/Advisor'
 import { calculateDistance } from '../utils/MapGenerator'
@@ -35,6 +36,7 @@ export interface GameState {
   playerCountryId: string
   firedEvents: Record<string, number>
   activeEventContext: any
+  randomSeed: number
 }
 
 const DAYS_PER_MONTH = 30
@@ -52,7 +54,8 @@ const initialState: GameState = {
   paused: true, // Start paused
   playerCountryId: 'QII', // Default player
   firedEvents: {},
-  activeEventContext: null
+  activeEventContext: null,
+  randomSeed: 12345
 }
 
 const gameStateSlice = createSlice({
@@ -228,7 +231,7 @@ const gameStateSlice = createSlice({
       }
 
       // Check prerequisites
-      const hasPrereqs = tech.prerequisites.every(reqId => country.researchedTechs.includes(reqId))
+      const hasPrereqs = !tech.condition || ConditionSystem.checkCondition(tech.condition, { ACTOR: country, ROOT: state })
       if (!hasPrereqs) {
         console.warn('Prerequisites not met')
         return
@@ -274,7 +277,7 @@ const gameStateSlice = createSlice({
       if (country.adoptedIdeas?.includes(ideaId)) return
 
       // Check prerequisites
-      const prereqsMet = idea.prerequisites.every(req => country.adoptedIdeas?.includes(req))
+      const prereqsMet = !idea.condition || ConditionSystem.checkCondition(idea.condition, { ACTOR: country, ROOT: state })
       if (!prereqsMet) return
 
       // Check cost (tradition)

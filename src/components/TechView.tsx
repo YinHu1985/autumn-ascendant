@@ -7,6 +7,7 @@ import GameController from '../controllers/GameController'
 import { getTechName } from '../utils/localizationUtils'
 import { TechCategory } from '../types/Technology'
 import { checkCommandAllowed } from '../systems/CommandRules'
+import { extractTechRequirements } from '../utils/ConditionUtils'
 import type { GameState } from '../store/gameState'
 
 interface TechViewProps {
@@ -118,9 +119,9 @@ export default function TechView({ onClose }: TechViewProps) {
                       )}
                       
                       {/* Prereqs */}
-                      {tech.prerequisites.length > 0 && (
+                      {extractTechRequirements(tech.condition).length > 0 && (
                          <div className="text-xs text-gray-500 mt-1">
-                           Req: {tech.prerequisites.map(p => registry.getTech(p)?.name).join(', ')}
+                           Req: {extractTechRequirements(tech.condition).map(p => registry.getTech(p)?.name).join(', ')}
                          </div>
                       )}
                     </div>

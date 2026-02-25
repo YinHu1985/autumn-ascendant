@@ -3,9 +3,10 @@ import { gameStateReducer, tick, moveArmy, researchTech, adoptIdea, constructBui
 import type { GameState } from '../store/gameState'
 import type { Command } from '../types/Command'
 import { EventManager, registerCoreEvents } from '../systems/EventManager'
+import { ConditionSystem } from '../systems/ConditionSystem'
 import { resolveTurn, initializeBattle, getBestTarget, generateTroopsForArmy, getDefaultTroopStatsForType } from '../systems/BattleSystem'
 import { Army } from '../types/Army'
-import { TAGS, COUNTRY_NAMES, COUNTRY_COLORS, CountryTag } from '../data/CountryTags'
+import { TAGS, COUNTRY_NAMES, COUNTRY_COLORS, CountryTag } from '../content/CountryTags'
 import { SCHOOLS, School, createEmptyStockpile, ResourceId } from '../types/Country'
 import { IdeaRegistry } from '../systems/IdeaRegistry'
 import { ModifierRegistry } from '../systems/ModifierRegistry'
@@ -391,7 +392,7 @@ const commandHandlers: { [K in Command['type']]?: CommandHandler<any> } = {
       for (const id of equippedIds) {
         if (id === ideaId) continue
         const idea = registry.getIdea(id)
-        if (idea && idea.prerequisites.includes(ideaId)) {
+        if (idea && ConditionSystem.dependsOn(idea.condition, 'adoptedIdeas', ideaId)) {
           blockedBy.push(id)
         }
       }

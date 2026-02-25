@@ -67,3 +67,8 @@ export interface RawBuilding {
   outputStockpile?: Record<string, number>
   requiredProduct?: string
 }
+
+export interface RawResource {
+  id: string
+  basePrice: number
+}

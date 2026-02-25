@@ -6,7 +6,8 @@ import { IdeaRegistry } from './IdeaRegistry'
 import { BuildingRegistry } from './BuildingRegistry'
 import { EventManager } from './EventManager'
 import { ConditionSystem } from './ConditionSystem'
-import { RESOURCE_BASE_PRICE, ResourceId } from '../types/Country'
+import { ResourceId } from '../types/Country'
+import { getResourcePrice } from '../content/ResourceLoader'
 
 export interface CommandCheckResult {
   allowed: boolean
@@ -339,7 +340,7 @@ export function checkCommandAllowed(state: GameState, command: Command): Command
       if (!country) {
         return { allowed: false, hardBlock: true, reasons: ['Country not found'] }
       }
-      const basePrice = RESOURCE_BASE_PRICE[resourceId as ResourceId]
+      const basePrice = getResourcePrice(resourceId as ResourceId)
       if (!basePrice) {
         return { allowed: false, hardBlock: true, reasons: ['Resource not tradeable'] }
       }

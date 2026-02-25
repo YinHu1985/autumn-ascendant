@@ -1,7 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { selectCountries, selectPlayerCountryId } from '../store/gameState'
-import { RESOURCE_BASE_PRICE, ResourceId } from '../types/Country'
+import { ResourceId } from '../types/Country'
+import { getAllResourceIds, getResourcePrice } from '../content/ResourceLoader'
 import GameController from '../controllers/GameController'
 import { LocManager } from '../systems/LocManager'
 
@@ -20,33 +21,7 @@ export default function WarehouseView({ onClose }: WarehouseViewProps) {
   const formatAmount = (val: number) =>
     val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 
-  const resourceList: ResourceId[] = [
-    'grain',
-    'logs',
-    'cattle',
-    'fruit',
-    'fish',
-    'wool',
-    'tea',
-    'hardwood',
-    'silk',
-    'gold',
-    'silver',
-    'iron',
-    'copper',
-    'tin',
-    'bronze',
-    'ships',
-    'textiles',
-    'furniture',
-    'luxury_furniture',
-    'spirits',
-    'fruit_wine',
-    'lumber',
-    'clothes',
-    'luxury_clothes',
-    'paper',
-  ]
+  const resourceList: ResourceId[] = getAllResourceIds()
 
   const handleTrade = (resourceId: ResourceId, quantity: number) => {
     GameController.getInstance().tradeResource(playerId, resourceId, quantity)
@@ -79,7 +54,7 @@ export default function WarehouseView({ onClose }: WarehouseViewProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {resourceList.map(id => {
               const value = country.resources.stockpile?.[id] ?? 0
-              const basePrice = RESOURCE_BASE_PRICE[id]
+              const basePrice = getResourcePrice(id)
               const buyPrice = basePrice
               const sellPrice = basePrice / 2
               const label = t(`resource.${id}`)

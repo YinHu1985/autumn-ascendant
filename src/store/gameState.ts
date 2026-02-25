@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import type { Settlement } from '../types/Settlement'
 import type { Country, ResourceId } from '../types/Country'
-import { RESOURCE_BASE_PRICE } from '../types/Country'
+import { getResourcePrice } from '../content/ResourceLoader'
 import type { Army } from '../types/Army'
 import { processEconomy } from '../systems/EconomySystem'
 import { processArmyMovement, processArmyRecovery, moveArmyCommand } from '../systems/ArmySystem'
@@ -341,7 +341,7 @@ const gameStateSlice = createSlice({
       const country = state.countries[countryId]
       if (!country) return
 
-      const basePrice = RESOURCE_BASE_PRICE[resourceId]
+      const basePrice = getResourcePrice(resourceId)
       if (!basePrice) return
 
       const currentStock = country.resources.stockpile[resourceId]

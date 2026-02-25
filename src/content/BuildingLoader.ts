@@ -13,5 +13,5 @@ export const buildings: Building[] = RAW_BUILDINGS.map(raw => ({
   monthlyMaintenance: raw.monthlyMaintenance,
   inputStockpile: raw.inputStockpile,
   outputStockpile: raw.outputStockpile,
-  requiredProduct: raw.requiredProduct as any
+  requiredProduct: raw.requiredProduct
 }))

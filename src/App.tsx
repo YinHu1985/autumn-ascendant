@@ -22,7 +22,7 @@ import AdvisorView from './components/AdvisorView'
 import WarehouseView from './components/WarehouseView'
 
 import { COUNTRY_NAMES, COUNTRY_COLORS } from './content/CountryTags'
-import { createEmptyStockpile } from './types/Country'
+import { createEmptyStockpile } from './content/ResourceLoader'
 import { useSelector } from 'react-redux'
 import { selectArmies, selectPlayerCountryId, selectSettlements } from './store/gameState'
 

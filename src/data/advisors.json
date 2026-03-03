@@ -101,7 +101,7 @@
       "Mohism",
       "Siege Defense"
     ],
-    "portrait": "/portraits/qinhuali.png"
+    "portrait": "/portraits/qinguli.png"
   },
   {
     "id": "advisor_mengsheng",
@@ -176,7 +176,7 @@
       "Legalism",
       "Centralization"
     ],
-    "portrait": "/portraits/lishi.png"
+    "portrait": "/portraits/lisi.png"
   },
   {
     "id": "advisor_shenbuhai",
@@ -428,7 +428,7 @@
     "specialAbilities": [
       "Agriculturalism"
     ],
-    "portrait": "/portraits/xuhing.png"
+    "portrait": "/portraits/xuxing.png"
   },
   {
     "id": "advisor_chunyu",

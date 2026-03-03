@@ -1,242 +1,40 @@
 [
-  {
-    "id": "ren",
-    "school": "confucianism",
-    "cost": 100,
-    "modifierTarget": "stability"
-  },
-  {
-    "id": "yi",
-    "school": "confucianism",
-    "cost": 120,
-    "modifierTarget": "stability",
-    "prerequisites": [
-      "ren"
-    ]
-  },
-  {
-    "id": "li",
-    "school": "confucianism",
-    "cost": 150,
-    "modifierTarget": "stability",
-    "prerequisites": [
-      "ren"
-    ]
-  },
-  {
-    "id": "zhi",
-    "school": "confucianism",
-    "cost": 180,
-    "modifierTarget": "production_gold",
-    "prerequisites": [
-      "li"
-    ]
-  },
-  {
-    "id": "xin",
-    "school": "confucianism",
-    "cost": 200,
-    "modifierTarget": "stability",
-    "prerequisites": [
-      "yi"
-    ]
-  },
-  {
-    "id": "zhong",
-    "school": "confucianism",
-    "cost": 250,
-    "modifierTarget": "stability",
-    "prerequisites": [
-      "xin"
-    ]
-  },
-  {
-    "id": "xiao",
-    "school": "confucianism",
-    "cost": 300,
-    "modifierTarget": "stability",
-    "prerequisites": [
-      "zhong"
-    ]
-  },
-  {
-    "id": "zhongyong",
-    "school": "confucianism",
-    "cost": 400,
-    "modifierTarget": "stability",
-    "prerequisites": [
-      "zhi"
-    ]
-  },
-  {
-    "id": "dezhi",
-    "school": "confucianism",
-    "cost": 500,
-    "modifierTarget": "stability",
-    "prerequisites": [
-      "ren"
-    ]
-  },
-  {
-    "id": "wangdao",
-    "school": "confucianism",
-    "cost": 800,
-    "modifierTarget": "stability",
-    "prerequisites": [
-      "dezhi"
-    ]
-  },
-  {
-    "id": "fa",
-    "school": "legalism",
-    "cost": 100,
-    "modifierTarget": "authority"
-  },
-  {
-    "id": "shu",
-    "school": "legalism",
-    "cost": 150,
-    "modifierTarget": "authority",
-    "prerequisites": [
-      "fa"
-    ]
-  },
-  {
-    "id": "shi",
-    "school": "legalism",
-    "cost": 200,
-    "modifierTarget": "authority",
-    "prerequisites": [
-      "fa"
-    ]
-  },
-  {
-    "id": "fazhi",
-    "school": "legalism",
-    "cost": 300,
-    "modifierTarget": "authority",
-    "prerequisites": [
-      "fa"
-    ]
-  },
-  {
-    "id": "yanxing",
-    "school": "legalism",
-    "cost": 400,
-    "modifierTarget": "revolt_risk",
-    "prerequisites": [
-      "fazhi"
-    ]
-  },
-  {
-    "id": "junfa",
-    "school": "legalism",
-    "cost": 500,
-    "modifierTarget": "authority",
-    "prerequisites": [
-      "yanxing"
-    ]
-  },
-  {
-    "id": "lianzuo",
-    "school": "legalism",
-    "cost": 600,
-    "modifierTarget": "revolt_risk",
-    "prerequisites": [
-      "junfa"
-    ]
-  },
-  {
-    "id": "gengzhan",
-    "school": "legalism",
-    "cost": 800,
-    "modifierTarget": "production_food",
-    "prerequisites": [
-      "fa"
-    ]
-  },
-  {
-    "id": "jianai",
-    "school": "mohism",
-    "cost": 100,
-    "modifierTarget": "defense"
-  },
-  {
-    "id": "feigong",
-    "school": "mohism",
-    "cost": 150,
-    "modifierTarget": "defense",
-    "prerequisites": [
-      "jianai"
-    ]
-  },
-  {
-    "id": "jieyong",
-    "school": "mohism",
-    "cost": 200,
-    "modifierTarget": "production_gold",
-    "prerequisites": [
-      "jianai"
-    ]
-  },
-  {
-    "id": "jiezang",
-    "school": "mohism",
-    "cost": 250,
-    "modifierTarget": "production_gold",
-    "prerequisites": [
-      "jieyong"
-    ]
-  },
-  {
-    "id": "shangxian",
-    "school": "mohism",
-    "cost": 300,
-    "modifierTarget": "production_gold",
-    "prerequisites": [
-      "jianai"
-    ]
-  },
-  {
-    "id": "shangtong",
-    "school": "mohism",
-    "cost": 400,
-    "modifierTarget": "stability",
-    "prerequisites": [
-      "shangxian"
-    ]
-  },
-  {
-    "id": "feiming",
-    "school": "mohism",
-    "cost": 500,
-    "modifierTarget": "morale",
-    "prerequisites": [
-      "jianai"
-    ]
-  },
-  {
-    "id": "feile",
-    "school": "mohism",
-    "cost": 600,
-    "modifierTarget": "production_gold",
-    "prerequisites": [
-      "jieyong"
-    ]
-  },
-  {
-    "id": "dao",
-    "school": "taoism",
-    "cost": 100,
-    "modifierTarget": "happiness"
-  },
-  {
-    "id": "wuwei",
-    "school": "taoism",
-    "cost": 200,
-    "modifierTarget": "happiness",
-    "prerequisites": [
-      "dao"
-    ]
-  }
+  { "id": "yinyang_wuxing", "name": "阴阳五行", "description": "阴阳之道，推演五行。", "school": "misc", "cost": 100, "modifierTarget": "stability" },
+  { "id": "wude_shizhong", "name": "五德始终", "description": "五德更替，王朝循环。", "school": "misc", "cost": 150, "modifierTarget": "stability" },
+  { "id": "shanggu_fuli", "name": "尚古复礼", "description": "尊古制、正礼仪。", "school": "confucianism", "cost": 100, "modifierTarget": "stability" },
+  { "id": "duanmu_yifeng", "name": "端木遗风", "description": "以商辅政，通达四方。", "school": "confucianism", "cost": 120, "modifierTarget": "stability" },
+  { "id": "youjiao_wulei", "name": "有教无类", "description": "广开教化，因材施教。", "school": "confucianism", "cost": 150, "modifierTarget": "stability" },
+  { "id": "zhongyong_zhidao", "name": "中庸之道", "description": "守中致和，调和纷争。", "school": "confucianism", "cost": 150, "modifierTarget": "stability" },
+  { "id": "mingui_junqing", "name": "民贵君轻", "description": "民心所向，国本乃固。", "school": "confucianism", "cost": 180, "modifierTarget": "production_gold" },
+  { "id": "daxue_zhidao", "name": "大学之道", "description": "修身齐家，治国平天下。", "school": "confucianism", "cost": 200, "modifierTarget": "stability" },
+  { "id": "wuwei_erzhi", "name": "无为而治", "description": "少扰民力，顺其自然。", "school": "taoism", "cost": 100, "modifierTarget": "happiness" },
+  { "id": "guisheng_zhongji", "name": "贵生重己", "description": "贵生保真，节欲养神。", "school": "taoism", "cost": 120, "modifierTarget": "happiness" },
+  { "id": "neisheng_waiwang", "name": "内圣外王", "description": "内修其德，外济天下。", "school": "taoism", "cost": 150, "modifierTarget": "stability" },
+  { "id": "tianren_heyi", "name": "天人合一", "description": "顺天时，合人事。", "school": "taoism", "cost": 180, "modifierTarget": "happiness" },
+  { "id": "sigong_zhidu", "name": "寺工制度", "description": "官府统工，制器有序。", "school": "legalism", "cost": 100, "modifierTarget": "authority" },
+  { "id": "sitian_keshui", "name": "私田课税", "description": "厘定田赋，充实国用。", "school": "legalism", "cost": 150, "modifierTarget": "authority" },
+  { "id": "dingzhu_xingshu", "name": "鼎铸刑书", "description": "刑书著鼎，法令昭示。", "school": "legalism", "cost": 180, "modifierTarget": "authority" },
+  { "id": "gengzhan_zhidu", "name": "耕战制度", "description": "以农养战，以战强国。", "school": "legalism", "cost": 200, "modifierTarget": "production_food" },
+  { "id": "yanxing_junfa", "name": "严刑峻法", "description": "以法制乱，赏罚必信。", "school": "legalism", "cost": 250, "modifierTarget": "revolt_risk" },
+  { "id": "fenjun_lixian", "name": "分郡立县", "description": "郡县之制，中央直辖。", "school": "legalism", "cost": 300, "modifierTarget": "authority" },
+  { "id": "shangbing_famou", "name": "上兵伐谋", "description": "先谋后战，不战屈人。", "school": "military", "cost": 120, "modifierTarget": "morale" },
+  { "id": "jianli_shuishi", "name": "建立水师", "description": "编练舟师，制海通商。", "school": "military", "cost": 150, "modifierTarget": "naval_power" },
+  { "id": "gongnu_chengzhen", "name": "弓弩成阵", "description": "弓弩齐发，阵列如墙。", "school": "military", "cost": 150, "modifierTarget": "ranged_power" },
+  { "id": "sheli_qibing", "name": "设立骑兵", "description": "骑兵突击，机动制胜。", "school": "military", "cost": 180, "modifierTarget": "cavalry_power" },
+  { "id": "gongcheng_zhiqi", "name": "攻城之机", "description": "云梯冲车，破城有术。", "school": "military", "cost": 200, "modifierTarget": "siege_power" },
+  { "id": "jianai_jiaoli", "name": "兼爱交利", "description": "兼相爱，交相利。", "school": "mohism", "cost": 100, "modifierTarget": "defense" },
+  { "id": "feigong_bianyi", "name": "非攻辩义", "description": "止无义之战，以辩明义。", "school": "mohism", "cost": 150, "modifierTarget": "defense" },
+  { "id": "xingli_chuhai", "name": "兴利除害", "description": "兴民之利，除国之害。", "school": "mohism", "cost": 180, "modifierTarget": "production_gold" },
+  { "id": "shouyu_zhiqi", "name": "守圉之器", "description": "守城器械，固若金汤。", "school": "mohism", "cost": 200, "modifierTarget": "defense" },
+  { "id": "lunbian_mingshi", "name": "论辩名实", "description": "名实相符，辩之有据。", "school": "logicians", "cost": 120, "modifierTarget": "stability" },
+  { "id": "qushi_yu_ming", "name": "取实与名", "description": "取其实，正其名。", "school": "logicians", "cost": 150, "modifierTarget": "production_gold" },
+  { "id": "baicao_zhixue", "name": "百草之学", "description": "识草木药性，以疗疾苦。", "school": "misc", "cost": 120, "modifierTarget": "happiness" },
+  { "id": "zhenjiu_zhishu", "name": "针灸之术", "description": "针砭经络，调和阴阳。", "school": "misc", "cost": 150, "modifierTarget": "happiness" },
+  { "id": "daoting_tushuo", "name": "道听途说", "description": "市井流言，众口铄金。", "school": "misc", "cost": 80, "modifierTarget": "stability" },
+  { "id": "zhongzhisuozai", "name": "众之所载", "description": "众人所载，汇为史闻。", "school": "misc", "cost": 80, "modifierTarget": "stability" },
+  { "id": "hezong_lianheng", "name": "合纵连横", "description": "纵横捭阖，连衡制衡。", "school": "diplomacy", "cost": 150, "modifierTarget": "diplomacy_power" },
+  { "id": "junmin_tonggeng", "name": "君民同耕", "description": "君民并作，务本强农。", "school": "agricultural", "cost": 150, "modifierTarget": "production_food" },
+  { "id": "tianming_suogui", "name": "天命所归", "description": "终极目标：历史路线。", "school": "misc", "cost": 0, "modifierTarget": "stability", "prerequisites": ["wude_shizhong", "daxue_zhidao", "neisheng_waiwang", "fenjun_lixian"] },
+  { "id": "zhiye_jundui", "name": "职业军队", "description": "终极目标：征服路线。", "school": "military", "cost": 0, "modifierTarget": "morale", "prerequisites": ["sheli_qibing", "gongnu_chengzhen", "shangbing_famou", "sigong_zhidu"] },
+  { "id": "mojia_houxue", "name": "墨家后学", "description": "终极目标：科技革命。", "school": "mohism", "cost": 0, "modifierTarget": "production_gold", "prerequisites": ["shouyu_zhiqi", "qushi_yu_ming", "baicao_zhixue"] }
 ]

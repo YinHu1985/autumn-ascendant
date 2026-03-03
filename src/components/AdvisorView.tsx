@@ -40,6 +40,17 @@ export default function AdvisorView({ onClose }: AdvisorViewProps) {
       GameController.getInstance().fireAdvisor(advisor.id)
   }
 
+  const getPortraitUrl = (portraitPath: string) => {
+    // If the path starts with /, remove it to make it relative to the base path
+    // Or if we are in dev mode, we can use it directly.
+    // However, with vite base: '/autumn-ascendant/', we might need to prepend the base.
+    // The safest way is to use import.meta.env.BASE_URL
+    const baseUrl = import.meta.env.BASE_URL;
+    // Remove leading slash from portraitPath if it exists to avoid double slashes
+    const cleanPath = portraitPath.startsWith('/') ? portraitPath.slice(1) : portraitPath;
+    return `${baseUrl}${cleanPath}`;
+  }
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 font-serif">
       <div className="bg-antique-white w-5/6 h-5/6 rounded-sm shadow-2xl flex flex-col p-6 border-4 border-double border-antique-wood">
@@ -65,11 +76,15 @@ export default function AdvisorView({ onClose }: AdvisorViewProps) {
                             ${selectedAdvisorId === advisor.id ? 'ring-2 ring-antique-red' : ''}
                         `}
                     >
-                        <div className="w-16 h-16 bg-antique-wood rounded-full border-2 border-antique-gold mb-1 overflow-hidden">
-                             {/* Portrait Placeholder */}
-                             <div className="w-full h-full bg-gray-300 flex items-center justify-center text-xs text-gray-500">
-                                {t(advisor.name)[0]}
-                             </div>
+                        <div className="w-20 h-[60px] bg-antique-wood rounded-sm border-2 border-antique-gold mb-1 overflow-hidden relative shadow-md">
+                             {/* Portrait */}
+                             {advisor.portrait ? (
+                               <img src={getPortraitUrl(advisor.portrait)} alt={t(advisor.name)} className="w-full h-full object-cover" />
+                             ) : (
+                               <div className="w-full h-full bg-gray-300 flex items-center justify-center text-xs text-gray-500">
+                                  {t(advisor.name)[0]}
+                               </div>
+                             )}
                         </div>
                         <div className="text-sm font-bold text-antique-dark text-center leading-tight">{t(advisor.name)}</div>
                         <div className="text-xs text-antique-wood">Lv.{advisor.level}</div>
@@ -116,8 +131,12 @@ export default function AdvisorView({ onClose }: AdvisorViewProps) {
                     <div className="flex flex-col h-full">
                         <div className="flex gap-6 mb-6">
                             {/* Portrait Large */}
-                            <div className="w-32 h-32 bg-antique-wood rounded border-4 border-double border-antique-gold flex-shrink-0 flex items-center justify-center overflow-hidden">
-                                <div className="text-4xl text-antique-white">{t(selectedAdvisor.name)[0]}</div>
+                            <div className="w-32 h-24 bg-antique-wood rounded border-4 border-double border-antique-gold flex-shrink-0 flex items-center justify-center overflow-hidden relative">
+                                {selectedAdvisor.portrait ? (
+                                    <img src={getPortraitUrl(selectedAdvisor.portrait)} alt={t(selectedAdvisor.name)} className="w-full h-full object-cover" />
+                                ) : (
+                                    <div className="text-4xl text-antique-white">{t(selectedAdvisor.name)[0]}</div>
+                                )}
                             </div>
                             
                             {/* Stats */}

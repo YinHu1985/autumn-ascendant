@@ -11,6 +11,7 @@
     "test:watch": "vitest --environment jsdom",
     "data:export": "node scripts/excel-sync.js export",
     "data:import": "node scripts/excel-sync.js import",
+    "process:portraits": "node scripts/process-portraits.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -20,9 +21,12 @@
     "@types/topojson-client": "^3.1.5",
     "d3-contour": "^4.0.2",
     "d3-geo": "^3.1.1",
+    "gm": "^1.25.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.2.0",
+    "smartcrop": "^2.0.5",
+    "smartcrop-gm": "^2.0.2",
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {

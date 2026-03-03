@@ -12,6 +12,7 @@
     "data:export": "node scripts/excel-sync.js export",
     "data:import": "node scripts/excel-sync.js import",
     "process:portraits": "node scripts/process-portraits.js",
+    "process:ideas": "node scripts/process-idea-images.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

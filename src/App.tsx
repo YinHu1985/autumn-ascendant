@@ -20,11 +20,13 @@ import vectorMapData from './data/worldMapGeo.json'
 import { generateInitialAdvisors } from './content/AdvisorLoader'
 import AdvisorView from './components/AdvisorView'
 import WarehouseView from './components/WarehouseView'
+import OptionsView from './components/OptionsView'
+import { SoundManager } from './systems/SoundManager'
 
 import { COUNTRY_NAMES, COUNTRY_COLORS } from './content/CountryTags'
 import { createEmptyStockpile } from './content/ResourceLoader'
 import { useSelector } from 'react-redux'
-import { selectArmies, selectPlayerCountryId, selectSettlements } from './store/gameState'
+import { selectArmies, selectPlayerCountryId, selectSettlements, selectActiveBattle } from './store/gameState'
 
 // Fix Country interface mismatch in initialMap by initializing defaults if missing
 // The JSON might not have researchedTechs yet.
@@ -68,7 +70,7 @@ registerCoreEvents()
 
 const MAP_ENABLED = true
 
-type ActiveView = 'country' | 'tech' | 'ideas' | 'military' | 'diplomacy' | 'advisors' | 'warehouse' | null
+type ActiveView = 'country' | 'tech' | 'ideas' | 'military' | 'diplomacy' | 'advisors' | 'warehouse' | 'options' | null
 
 export default function App() {
   const [selectedSettlementId, setSelectedSettlementId] = useState<string | null>(null)
@@ -83,6 +85,23 @@ export default function App() {
   const armies = useSelector(selectArmies)
   const settlements = useSelector(selectSettlements)
   const playerCountryId = useSelector(selectPlayerCountryId)
+  const activeBattle = useSelector(selectActiveBattle)
+
+  // Initialize SoundManager and handle music switching
+  useEffect(() => {
+    SoundManager.getInstance().playBGM('peace')
+    return () => {
+      SoundManager.getInstance().stopBGM()
+    }
+  }, [])
+
+  useEffect(() => {
+    if (activeBattle) {
+      SoundManager.getInstance().playBGM('battle')
+    } else {
+      SoundManager.getInstance().playBGM('peace')
+    }
+  }, [activeBattle])
 
   // Auto-switch to Chinese when Debug Mode is enabled
   useEffect(() => {
@@ -256,6 +275,7 @@ export default function App() {
         {activeView === 'diplomacy' && <DiplomacyView onClose={closeView} />}
         {activeView === 'advisors' && <AdvisorView onClose={closeView} />}
         {activeView === 'warehouse' && <WarehouseView onClose={closeView} />}
+        {activeView === 'options' && <OptionsView onClose={closeView} />}
 
         <EventModal />
         <BattleView />

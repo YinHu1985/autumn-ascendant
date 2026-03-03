@@ -1,0 +1,20 @@
+[
+  {
+    "id": "peace_1",
+    "file": "Jade_River_Reflections.mp3",
+    "type": "bgm",
+    "tags": ["peace"]
+  },
+  {
+    "id": "peace_2",
+    "file": "Chronicles_of_the_Crimson_Empire.mp3",
+    "type": "bgm",
+    "tags": ["peace"]
+  },
+  {
+    "id": "battle_1",
+    "file": "Crimson_Banners_of_the_Jade_Empire.mp3",
+    "type": "bgm",
+    "tags": ["battle"]
+  }
+]

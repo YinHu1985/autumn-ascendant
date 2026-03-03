@@ -94,6 +94,12 @@ export default function IdeaView({ onClose }: IdeaViewProps) {
     setActiveGoalId(null)
   }
 
+  const getImageUrl = (path: string) => {
+    const baseUrl = import.meta.env.BASE_URL;
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    return `${baseUrl}${cleanPath}`;
+  }
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 font-serif">
       <div className="bg-antique-white w-5/6 h-5/6 rounded-sm shadow-2xl flex flex-col p-6 border-4 border-double border-antique-wood">
@@ -191,7 +197,16 @@ export default function IdeaView({ onClose }: IdeaViewProps) {
                     onClick={() => setSelectedSlotIndex(index)}
                     className={`${isSelected ? 'border-antique-gold bg-antique-paper' : 'border-antique-wood bg-antique-white'} w-full px-3 py-2 rounded-sm border text-xs flex gap-2 items-start`}
                   >
-                    <div className="w-8 h-8 rounded-sm border border-antique-gold bg-antique-wood/20 flex-shrink-0" />
+                        <div className="w-8 h-8 rounded-sm border border-antique-gold bg-antique-wood/20 flex-shrink-0 overflow-hidden relative">
+                          {idea && (
+                            <img 
+                              src={getImageUrl(`ideas/${idea.id.replace(/^idea_/, '')}.png`)}
+                              alt={t(idea.name)}
+                              className="w-full h-full object-cover"
+                              onError={(e) => e.currentTarget.style.display = 'none'} 
+                            />
+                          )}
+                        </div>
                     <div className="flex-1 min-w-0 flex flex-col items-start">
                       <span className="font-bold uppercase">{t('idea.slot')} {index + 1}</span>
                       <span className="text-[11px] text-antique-dark truncate">{idea ? t(idea.name) : t('idea.empty')}</span>
@@ -267,7 +282,14 @@ export default function IdeaView({ onClose }: IdeaViewProps) {
                     >
                       <div>
                         <div className="flex items-start gap-3 mb-2">
-                          <div className="w-12 h-12 rounded-sm border border-antique-gold bg-antique-wood/20 flex-shrink-0" />
+                        <div className="w-12 h-12 rounded-sm border border-antique-gold bg-antique-wood/20 flex-shrink-0 overflow-hidden relative">
+                            <img 
+                              src={getImageUrl(`ideas/${idea.id.replace(/^idea_/, '')}.png`)}
+                              alt={t(idea.name)}
+                              className="w-full h-full object-cover"
+                              onError={(e) => e.currentTarget.style.display = 'none'} 
+                            />
+                          </div>
                           <div className="flex-1 min-w-0">
                             <div className="flex justify-between items-start gap-2">
                               <h3 className="font-bold text-lg text-antique-dark leading-tight">{t(idea.name)}</h3>

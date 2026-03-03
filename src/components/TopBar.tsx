@@ -5,7 +5,7 @@ import { LocManager } from '../systems/LocManager'
 import GameController from '../controllers/GameController'
 
 interface TopBarProps {
-  onOpenView: (view: 'country' | 'tech' | 'ideas' | 'military' | 'diplomacy' | 'advisors' | 'warehouse') => void
+  onOpenView: (view: 'country' | 'tech' | 'ideas' | 'military' | 'diplomacy' | 'advisors' | 'warehouse' | 'options') => void
 }
 
 export default function TopBar({ onOpenView }: TopBarProps) {
@@ -63,6 +63,7 @@ export default function TopBar({ onOpenView }: TopBarProps) {
         <button onClick={() => onOpenView('diplomacy')} className="px-3 py-1 bg-antique-wood hover:bg-antique-paper hover:text-antique-dark rounded-sm text-sm font-bold border border-antique-gold transition-colors">{t('view.diplomacy')}</button>
         <button onClick={() => onOpenView('warehouse')} className="px-3 py-1 bg-antique-wood hover:bg-antique-paper hover:text-antique-dark rounded-sm text-sm font-bold border border-antique-gold transition-colors">{t('view.warehouse')}</button>
         <button onClick={() => onOpenView('advisors')} className="px-3 py-1 bg-antique-wood hover:bg-antique-paper hover:text-antique-dark rounded-sm text-sm font-bold border border-antique-gold transition-colors">{t('view.advisors') || 'Advisors'}</button>
+        <button onClick={() => onOpenView('options')} className="px-3 py-1 bg-antique-wood hover:bg-antique-paper hover:text-antique-dark rounded-sm text-sm font-bold border border-antique-gold transition-colors">{t('options.title') || 'Options'}</button>
       </div>
 
       {country && (
